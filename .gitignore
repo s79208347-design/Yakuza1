@@ -1,0 +1,19 @@
+# เพิ่มไฟล์ที่ไม่ต้องเอาขึ้น Git
+.env
+logs/
+*.log
+
+# Docker
+.dockerignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Cloudflare credentials
+cloudflare/credentials.json
+*.pem
