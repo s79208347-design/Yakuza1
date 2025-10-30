@@ -1,0 +1,2405 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//yakuzabet1.com" />
+    <link rel="dns-prefetch" href="//lin.ee" />
+    
+    <title>🎰 เกมสล็อตออนไลน์ - ถอนได้จริง! 💰 | ยากูซ่าเบท [LIVE]</title>
+    <meta name="theme-color" content="#032d43" />
+    <meta name="msapplication-TileColor" content="#032d43" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="review-custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @media (max-width: 600px) {
+        .mobile-buttons {
+          display: none !important;
+        }
+        .logo-top .brand {
+          max-width: 80px !important;
+        }
+        .logo-top span {
+          font-size: 1.7em !important;
+          flex-grow: 1 !important;
+          text-align: center !important;
+          margin-left: 0 !important;
+        }
+      }
+      @media (min-width: 601px) {
+        .logo-top span {
+          flex-grow: unset !important;
+          text-align: left !important;
+          margin-left: 0 !important;
+        }
+      }
+      .floating-btn.register:hover {
+        background: linear-gradient(90deg, #ff512f 0%, #ffe066 100%);
+      }
+      .floating-btn.contact:hover {
+        background: linear-gradient(90deg, #1e90ff 0%, #ffe066 100%);
+      }
+.super-welcome,
+.ultra-welcome,
+.ultra-deluxe,
+.ultra-compact {
+  max-width: 420px !important;
+  min-width: 320px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 32px 36px 28px 36px !important;
+  box-sizing: border-box !important;
+}
+    </style>
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1087053619897661');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1087053619897661&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  </head>
+
+  <body>
+    <!-- Animated Starfield Background -->
+    <canvas id="star-bg" style="position:fixed;z-index:0;inset:0;pointer-events:none;display:block;"></canvas>
+    <script>
+      (function(){
+        const canvas = document.getElementById('star-bg');
+        let w = 0, h = 0, ctx;
+        let stars = [];
+        const STAR_NUM = 220;
+        function resize() {
+          w = window.innerWidth; h = window.innerHeight;
+          canvas.width = w; canvas.height = h;
+          ctx = canvas.getContext('2d');
+          genStars();
+        }
+        function genStars() {
+          stars = [];
+          for(let i=0;i<STAR_NUM;i++){
+            const d = Math.random()*1.2+0.3;
+            stars.push({
+              x: (Math.random()-0.5)*w*1.2,
+              y: (Math.random()-0.5)*h*1.2,
+              z: Math.random()*w*0.7 + 120,
+              size: d,
+              speed: 0.7 + Math.random()*1.2,
+              twinkle: Math.random()*Math.PI*2
+            });
+          }
+        }
+        let animationId;
+        function animate() {
+          try {
+            ctx.clearRect(0,0,w,h);
+            const cx = w/2, cy = h/2;
+            const currentTime = Date.now();
+            
+            for(const s of stars){
+              s.z -= s.speed;
+              if(s.z<40){
+                s.x = (Math.random()-0.5)*w*1.2;
+                s.y = (Math.random()-0.5)*h*1.2;
+                s.z = w*0.7 + 120;
+              }
+              const k = 420/s.z;
+              const sx = cx + s.x*k;
+              const sy = cy + s.y*k;
+              const alpha = 0.7 + 0.3*Math.sin(currentTime/700 + s.twinkle);
+              
+              ctx.save();
+              ctx.beginPath();
+              ctx.arc(sx, sy, s.size*k*1.1, 0, Math.PI*2);
+              ctx.closePath();
+              ctx.globalAlpha = alpha;
+              ctx.shadowColor = '#fffbe6';
+              ctx.shadowBlur = 12*k;
+              ctx.fillStyle = '#fff';
+              ctx.fill();
+              ctx.restore();
+              
+              if(Math.random()<0.005){
+                ctx.save();
+                ctx.beginPath();
+                ctx.arc(sx, sy, s.size*k*2.2, 0, Math.PI*2);
+                ctx.closePath();
+                ctx.globalAlpha = 0.18;
+                ctx.shadowColor = ['#ffd700','#a259ff','#00ffd0','#ff4081'][Math.floor(Math.random()*4)];
+                ctx.shadowBlur = 32*k;
+                ctx.fillStyle = ctx.shadowColor;
+                ctx.fill();
+                ctx.restore();
+              }
+            }
+            animationId = requestAnimationFrame(animate);
+          } catch (error) {
+            console.error('Starfield animation error:', error);
+            setTimeout(() => {
+              if (canvas && ctx) {
+                animationId = requestAnimationFrame(animate);
+              }
+            }, 1000);
+          }
+        }
+        resize();
+        window.addEventListener('resize', resize);
+        animate();
+        
+        window.addEventListener('beforeunload', function() {
+          if (animationId) {
+            cancelAnimationFrame(animationId);
+          }
+        });
+        
+        document.addEventListener('visibilitychange', function() {
+          if (document.hidden) {
+            if (animationId) {
+              cancelAnimationFrame(animationId);
+              animationId = null;
+            }
+          } else {
+            if (!animationId && canvas && ctx) {
+              animate();
+            }
+          }
+        });
+      })();
+    </script>
+    <header>
+      <!-- Logo and welcome text at the top, aligned left -->
+      <div
+        class="logo-top"
+        style="display:flex; align-items:center; justify-content:flex-start; background:linear-gradient(90deg,#032d43 0%,#0686c7 100%); border-radius:0; padding:1em; position:fixed; top:0; left:0; right:0; z-index:2147483647; box-shadow:0 4px 16px rgba(0,0,0,0.25);"
+      >
+        <img
+          src="images/โลโก้/01.png"
+          alt="logo"
+          class="brand"
+          style="max-width:100px; height:auto; margin-right:1em; filter:drop-shadow(0 2px 8px #02ff41);"
+        />
+        <span
+          style="flex-grow:1; text-align:center; font-size:2.0em; font-weight:1000; color:#ffe066; font-family:'Noto Sans Thai', sans-serif; text-shadow:0 2px 8px rgba(30, 0, 255, 0.533);"
+        >
+          ยากูซ่ายินดีต้อนรับ
+        </span>
+      </div>
+
+  <!-- ลบ nav.menu ที่เป็นแถบดำ -->
+    </header>
+
+  <main style="position:relative;z-index:1;">
+      <div class="infinite-slider-wrap" style="width: 100%; overflow: hidden;">
+        <div
+          class="infinite-slider"
+          style="display: flex; flex-direction: row; width: 100%; gap: 15px;"
+        >
+          <img
+            src="images/slider/01.gif"
+            alt="gif1"
+            style="opacity: 1; max-width: 100%; height: 150px;"
+          />
+          <img
+            src="images/slider/01.gif"
+            alt="โปรโมชั่นสล็อต 01"
+            style="opacity: 1; max-width: 100%; height: 150px;"
+          />
+          <img
+            src="images/slider/02.gif"
+            alt="โปรโมชั่นสล็อต 02"
+            style="opacity: 1; max-width: 100%; height: 150px;"
+          />
+          <img
+            src="images/slider/03.gif"
+            alt="โปรโมชั่นสล็อต 03"
+            style="opacity: 1; max-width: 100%; height: 150px;"
+          />
+          <img
+            src="images/slider/04.gif"
+            alt="โปรโมชั่นสล็อต 04"
+            style="opacity: 1; max-width: 100%; height: 150px;"
+          />
+          <img
+            src="images/slider/05.gif"
+            alt="โปรโมชั่นสล็อต 05"
+            style="opacity: 1; max-width: 100%; height: 150px;"
+          />
+          <img
+            src="images/slider/06.gif"
+            alt="โปรโมชั่นสล็อต 06"
+            style="opacity: 1; max-width: 100%; height: 150px;"
+          />
+        </div>
+      </div>
+
+      <style>
+        .infinite-slider img {
+          flex: 0 0 auto;
+          display: block;
+          box-sizing: border-box;
+          outline: 2px solid #00c1f172;
+          outline-offset: 2px;
+          border-radius: 20px;
+        }
+
+        .infinite-slider-wrap {
+          margin-top: 100px;
+        }
+      </style>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const wrap = document.querySelector(".infinite-slider-wrap");
+          if (!wrap) return;
+          const slider = wrap.querySelector(".infinite-slider");
+          const imgs = Array.from(slider.querySelectorAll("img"));
+          if (imgs.length === 0) return;
+
+          const originalCount = imgs.length;
+          const initialIndex = Math.min(2, Math.max(0, originalCount - 1));
+
+          imgs.forEach((img) => slider.appendChild(img.cloneNode(true)));
+
+          const transitionCss = "transform 0.6s ease";
+          let index = initialIndex;
+          let transitioning = false;
+          let timer = null;
+          const intervalMs = 2000;
+
+          slider.style.willChange = "transform";
+          slider.style.transition = transitionCss;
+
+          function getAllImgs() {
+            return Array.from(slider.querySelectorAll("img"));
+          }
+
+          function getTransformForIndex(i) {
+            const all = getAllImgs();
+            const img = all[i];
+            if (!img) return "0px";
+            const wrapWidth = wrap.clientWidth;
+            const imgRect = img.getBoundingClientRect();
+            const tx = Math.round(wrapWidth / 2 - imgRect.width / 2 - img.offsetLeft);
+            return tx + "px";
+          }
+
+          const allImgs = getAllImgs();
+          let loaded = 0;
+          allImgs.forEach((img) => {
+            if (img.complete) {
+              if (++loaded === allImgs.length) start();
+            } else {
+              img.addEventListener("load", () => {
+                if (++loaded === allImgs.length) start();
+              });
+              img.addEventListener("error", () => {
+                if (++loaded === allImgs.length) start();
+              });
+            }
+          });
+
+          function start() {
+            slider.style.transition = "none";
+            slider.style.transform = "translateX(" + getTransformForIndex(index) + ")";
+            void slider.offsetWidth;
+            slider.style.transition = transitionCss;
+
+            timer = setInterval(step, intervalMs);
+          }
+
+          function step() {
+            if (transitioning) return;
+            index++;
+            transitioning = true;
+            slider.style.transition = transitionCss;
+            slider.style.transform = "translateX(" + getTransformForIndex(index) + ")";
+          }
+
+          slider.addEventListener("transitionend", function (e) {
+            if (e.propertyName !== "transform") return;
+            transitioning = false;
+            if (index >= originalCount) {
+              slider.style.transition = "none";
+              index = initialIndex;
+              slider.style.transform = "translateX(" + getTransformForIndex(index) + ")";
+              void slider.offsetWidth;
+              slider.style.transition = transitionCss;
+            }
+          });
+
+          window.addEventListener("resize", function () {
+            slider.style.transition = "none";
+            slider.style.transform = "translateX(" + getTransformForIndex(index) + ")";
+            void slider.offsetWidth;
+            slider.style.transition = transitionCss;
+          });
+
+          wrap.addEventListener("mouseenter", () => {
+            if (timer) {
+              clearInterval(timer);
+              timer = null;
+            }
+          });
+          wrap.addEventListener("mouseleave", () => {
+            if (!timer) timer = setInterval(step, intervalMs);
+          });
+        });
+      </script>
+
+
+      <div class="review-withdraw-row">
+        <!-- กล่องผู้เล่นออนไลน์ -->
+        <div id="online-player-box" class="ultra-online-box">
+          <span class="ultra-online-inner">
+            <span class="ultra-glow"></span>
+            <svg class="ultra-online-icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="onlineG" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#b9f6ca"/>
+                  <stop offset="80%" stop-color="#00e676"/>
+                  <stop offset="100%" stop-color="#388e3c"/>
+                </radialGradient>
+                <radialGradient id="onlineGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+                  <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <circle cx="19" cy="19" r="18" fill="url(#onlineG)" stroke="#388e3c" stroke-width="2.5"/>
+              <circle cx="19" cy="19" r="13" fill="url(#onlineGlow)"/>
+              <ellipse cx="19" cy="15.5" rx="6.5" ry="6.5" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+              <path d="M8 31c0-4.5 5.5-8.5 11-8.5s11 4 11 8.5" stroke="#388e3c" stroke-width="2" fill="none"/>
+              <circle cx="19" cy="15.5" r="2.5" fill="#00e676" stroke="#388e3c" stroke-width="1.2"/>
+            </svg>
+            <span class="ultra-online-count">กำลังออนไลน์: <b id="online-player-count">0</b> คน<span class="online-red-dot pulse-dot"></span></span>
+          </span>
+        </div>
+    <div class="info-box super-welcome ultra-welcome ultra-deluxe ultra-compact">
+          <span class="info-icon">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;filter:drop-shadow(0 0 24px #fffbe6);">
+              <defs>
+                <radialGradient id="g2" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#fffbe6"/>
+                  <stop offset="80%" stop-color="#ffd700"/>
+                  <stop offset="100%" stop-color="#e53935"/>
+                </radialGradient>
+                <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#fffbe6" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <circle cx="30" cy="30" r="28" fill="url(#g2)" stroke="#7c43bd" stroke-width="3.5"/>
+              <circle cx="30" cy="30" r="22" fill="url(#glow)"/>
+              <text x="30" y="40" text-anchor="middle" font-size="34" font-family="Arial" fill="#7c43bd" font-weight="bold">🎰</text>
+            </svg>
+          </span>
+          <span class="info-title" style="color:#3a237a; font-weight: 900; text-shadow: 0 2px 12px #fff,0 0 4px #ffd700,0 0 2px #fffbe6; letter-spacing:1.5px;">ยินดีต้อนรับสู่ <span style="color:#e5397a; text-shadow:0 2px 8px #ffd700,0 0 2px #fffbe6;">ยากูซ่าเบท</span>!</span>
+          <span class="info-desc" style="color:#222; font-weight:700; text-shadow:0 2px 8px #fffbe6,0 0 2px #ffd700;">เว็บสล็อตสุดพรีเมียม <span style="color:#e53935; font-weight:900; text-shadow:0 2px 8px #fffbe6,0 0 2px #ffd700;">สมัครง่าย ถอนได้จริง</span> <br> <span style="color:#43a047; font-weight:900; text-shadow:0 2px 10px #fffbe6,0 0 2px #ffd700; font-size:1.08em;">โปรโมชั่นจัดเต็ม</span> <span class="ultra-emoji" style="font-size:1.2em; filter:drop-shadow(0 0 8px #ffd700cc); margin-left:2px;">✨💸</span><br><span style="color:#032d43; font-weight:700; text-shadow:0 2px 8px #fffbe6,0 0 2px #ffd700;">ดูรีวิวลูกค้าด้านล่างนี้เลย</span></span>
+          <!-- ปุ่มสมัครสมาชิกฟรีใต้ข้อความต้อนรับถูกลบออก -->
+          <div class="ultra-particles"></div>
+        </div>
+        <style>
+          .ultra-online-count {
+            position: relative;
+          }
+          .online-red-dot {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 60% 40%, #ff5a36 60%, #ff2d2d 100%);
+            box-shadow: 0 0 8px 2px #ff2d2dcc, 0 0 0 2px #fff3;
+            margin-left: 7px;
+            vertical-align: middle;
+            position: relative;
+            top: -1px;
+            z-index: 1;
+          }
+          .pulse-dot {
+            position: relative;
+          }
+          .pulse-dot::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            background: rgba(255,45,45,0.22);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            animation: pulse-dot-anim 1.3s infinite cubic-bezier(.66,0,0,1);
+            pointer-events: none;
+          }
+          @keyframes pulse-dot-anim {
+            0% { opacity: 0.7; transform: translate(-50%, -50%) scale(0.7); }
+            60% { opacity: 0.18; transform: translate(-50%, -50%) scale(1.3); }
+            100% { opacity: 0; transform: translate(-50%, -50%) scale(1.7); }
+          }
+          .ultra-glass {
+            background: linear-gradient(120deg,rgba(255,255,255,0.92) 0%,rgba(224,195,252,0.82) 60%,rgba(255,215,0,0.18) 100%);
+            box-shadow: 0 8px 32px 0 #b39ddb55, 0 0 0 6px #fffbe6, 0 0 40px 0 #ffd70033;
+            border-radius: 18px !important;
+            border: 2.5px solid;
+            border-image: linear-gradient(120deg,#ffd700 10%,#fffbe6 60%,#b39ddb 100%) 1;
+            backdrop-filter: blur(12px) saturate(1.2);
+            -webkit-backdrop-filter: blur(12px) saturate(1.2);
+            position: relative;
+            overflow: visible;
+          }
+          .ultra-glass .ultra-cta-btn {
+            background: linear-gradient(90deg,#ff9800 0%,#ffd700 40%,#fffbe6 100%);
+            color: #7c43bd;
+            font-weight: 900;
+            border: 2px solid #ffd700;
+            box-shadow: 0 2px 12px #ffd70099,0 0 0 2px #fffbe6;
+            text-shadow: 0 2px 8px #fffbe6,0 0 2px #ffd700;
+            letter-spacing: 1.2px;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+          }
+          .ultra-glass .ultra-cta-btn:hover, .ultra-glass .ultra-cta-btn:focus {
+            background: linear-gradient(90deg,#ffd700 0%,#ff9800 100%);
+            color: #fff;
+            box-shadow: 0 8px 32px #ffd700cc,0 0 0 8px #fffbe6;
+            transform: scale(1.07) translateY(-2px);
+          }
+          .ultra-glass .info-title {
+            color: #7c43bd;
+            text-shadow: 0 2px 12px #fffbe6,0 0 2px #ffd700,0 0 24px #b39ddb88;
+          }
+          .ultra-glass .info-desc {
+            color: #4a148c;
+            text-shadow: 0 1px 8px #fffbe6, 0 0 2px #ffd700;
+          }
+          .ultra-glass .ultra-particles {
+            pointer-events: none;
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+          }
+          .ultra-glass .ultra-particle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.7;
+            pointer-events: none;
+            animation: ultraParticleAnim 5.5s linear infinite;
+            filter: blur(0.5px) brightness(1.2);
+          }
+          @keyframes ultraParticleAnim {
+            0% { opacity: 0; transform: scale(0.5) translateY(0); }
+            10% { opacity: 0.7; }
+            80% { opacity: 0.7; }
+            100% { opacity: 0; transform: scale(1.2) translateY(-60px); }
+          }
+          .ultra-compact {
+            max-width: 340px;
+            min-width: 180px;
+            padding: 16px 10px 12px 10px !important;
+            margin: 10px auto 10px auto !important;
+          }
+          .ultra-compact .info-icon svg {
+            width: 38px !important;
+            height: 38px !important;
+          }
+          .ultra-compact .info-title {
+            font-size: 1.1em !important;
+            margin-bottom: 4px !important;
+          }
+          .ultra-compact .info-desc {
+            font-size: 0.98em !important;
+            margin-bottom: 10px !important;
+          }
+          .ultra-compact .ultra-cta-btn {
+            font-size: 0.98em !important;
+            padding: 7px 18px !important;
+            border-radius: 14px !important;
+            margin-top: 10px !important;
+          }
+          .ultra-compact .floating-star {
+            width: 18px !important;
+            height: 18px !important;
+            top: 8px !important;
+            right: 12px !important;
+          }
+          @media (max-width: 600px) {
+            .ultra-compact {
+              max-width: 96vw !important;
+              padding: 8px 2vw 6px 2vw !important;
+              font-size: 0.95em !important;
+              border-radius: 10px !important;
+            }
+            .ultra-compact .info-title {
+              font-size: 1em !important;
+            }
+            .ultra-compact .info-desc {
+              font-size: 0.92em !important;
+            }
+            .ultra-compact .ultra-cta-btn {
+              font-size: 0.92em !important;
+              padding: 6px 10px !important;
+              border-radius: 10px !important;
+            }
+            .ultra-compact .floating-star {
+              width: 14px !important;
+              height: 14px !important;
+              top: 4px !important;
+              right: 6px !important;
+            }
+          }
+          .ultra-deluxe {
+            box-shadow: 0 0 0 8px #ffd70044, 0 0 80px 0 #ffd70055, 0 0 0 0 #fffbe6;
+            border-image: linear-gradient(120deg,#ffd700 10%,#fffbe6 60%,#b39ddb 100%) 1;
+            position: relative;
+            overflow: visible;
+          }
+          .ultra-deluxe .floating-star {
+            position: absolute;
+            top: 18px;
+            right: 32px;
+            width: 32px;
+            height: 32px;
+            z-index: 10;
+            pointer-events: none;
+            animation: floatStar 2.8s ease-in-out infinite alternate;
+            filter: drop-shadow(0 0 12px #ffd700cc);
+          }
+          @keyframes floatStar {
+            0% { transform: translateY(0) scale(1) rotate(-8deg); }
+            100% { transform: translateY(-18px) scale(1.18) rotate(12deg); }
+          }
+          .ultra-deluxe .shine {
+            position: absolute;
+            left: -30%;
+            top: 0;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(120deg,rgba(255,255,255,0.0) 0%,rgba(255,255,255,0.7) 50%,rgba(255,255,255,0.0) 100%);
+            filter: blur(8px);
+            opacity: 0.7;
+            pointer-events: none;
+            z-index: 9;
+            animation: shineSweep 3.5s cubic-bezier(.68,-0.55,.27,1.55) infinite;
+          }
+          @keyframes shineSweep {
+            0% { left: -30%; opacity: 0.2; }
+            40% { opacity: 0.7; }
+            60% { left: 70%; opacity: 0.7; }
+            100% { left: 110%; opacity: 0.1; }
+          }
+          .ultra-deluxe .ultra-cta-btn {
+            box-shadow: 0 0 24px #ffd700cc,0 0 0 4px #fffbe6,0 0 0 0 #ff4081;
+            animation: pulseBtnGlow 2.2s ease-in-out infinite;
+          }
+          @keyframes pulseBtnGlow {
+            0% { box-shadow: 0 0 24px #ffd700cc,0 0 0 4px #fffbe6,0 0 0 0 #ff4081; }
+            50% { box-shadow: 0 0 48px #ffd700cc,0 0 0 8px #fffbe6,0 0 24px 0 #ff4081; }
+            100% { box-shadow: 0 0 24px #ffd700cc,0 0 0 4px #fffbe6,0 0 0 0 #ff4081; }
+          }
+          .ultra-gradient {
+            background: linear-gradient(90deg,#ff4081 0%,#ffd700 60%,#7c43bd 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            font-size: 1.1em;
+            letter-spacing: 0.5px;
+            animation: gradientMove 2.5s linear infinite alternate;
+          }
+          .ultra-welcome {
+            background: linear-gradient(120deg,#fffbe6 0%,#e0c3fc 40%,#b39ddb 80%,#ffd700 100%);
+            box-shadow: 0 12px 48px 0 #b39ddb88, 0 0 0 10px #fffbe6, 0 0 80px 0 #ffd70044;
+            border: 4px solid #7c43bd;
+            position: relative;
+            overflow: visible;
+            z-index: 2;
+          }
+          .ultra-welcome .info-icon {
+            margin-bottom: 12px;
+            animation: iconUltraSpin 3.5s linear infinite;
+          }
+          @keyframes iconUltraSpin {
+            0% { filter: drop-shadow(0 0 0 #ffd700); }
+            50% { filter: drop-shadow(0 0 36px #ffd700cc); }
+            100% { filter: drop-shadow(0 0 0 #ffd700); }
+          }
+          .ultra-welcome .info-title {
+            font-size: 2em;
+            font-weight: 900;
+            margin-bottom: 10px;
+            letter-spacing: 1.5px;
+            text-shadow: 0 2px 16px #fffbe6,0 0 4px #ffd700,0 0 24px #b39ddb88;
+            color: #7c43bd;
+            display: block;
+          }
+          .ultra-welcome .info-desc {
+            font-size: 1.18em;
+            font-weight: 500;
+            color: #4a148c;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            text-shadow: 0 1px 10px #fffbe6, 0 0 2px #ffd700;
+            display: block;
+          }
+          .ultra-gradient {
+            background: linear-gradient(90deg,#ff4081 0%,#ffd700 60%,#7c43bd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            font-size: 1.1em;
+            letter-spacing: 0.5px;
+            animation: gradientMove 2.5s linear infinite alternate;
+          }
+          @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+          }
+          .ultra-highlight {
+            color: #ff4081;
+            font-weight: bold;
+            text-shadow: 0 2px 12px #fffbe6,0 0 2px #ffd700;
+            font-size: 1.08em;
+          }
+          .ultra-emoji {
+            font-size: 1.2em;
+            filter: drop-shadow(0 0 8px #ffd700cc);
+            margin-left: 2px;
+          }
+          .ultra-cta-btn {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 12px 36px;
+            font-size: 1.18em;
+            font-weight: 900;
+            color: #fff;
+            background: linear-gradient(90deg,#ff9800 0%,#ffd700 40%,#fffbe6 100%);
+            border-radius: 32px;
+            box-shadow: 0 4px 24px #ffd700cc,0 0 0 4px #fffbe6;
+            border: 2.5px solid #fffbe6;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+            animation: popBtn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+          }
+          .ultra-cta-btn:hover, .ultra-cta-btn:focus {
+            box-shadow: 0 8px 40px #ffd700cc,0 0 0 8px #fffbe6;
+            background: linear-gradient(90deg,#ffd700 0%,#ff9800 100%);
+            transform: scale(1.06) translateY(-2px);
+          }
+          @keyframes popBtn {
+            0% { transform: scale(0.7); opacity: 0; }
+            60% { transform: scale(1.08); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+          }
+          .ultra-particles {
+            pointer-events: none;
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+          }
+          .ultra-particle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.7;
+            pointer-events: none;
+            animation: ultraParticleAnim 4.5s linear infinite;
+          }
+          @keyframes ultraParticleAnim {
+            0% { opacity: 0; transform: scale(0.5) translateY(0); }
+            10% { opacity: 0.7; }
+            80% { opacity: 0.7; }
+            100% { opacity: 0; transform: scale(1.2) translateY(-60px); }
+          }
+          .ultra-welcome,
+          .super-welcome {
+            max-width: 420px;
+            min-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 32px 36px 28px 36px;
+            box-sizing: border-box;
+          }
+        </style>
+        <style>
+          .ultra-online-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 18px;
+            position: relative;
+            z-index: 10;
+            animation: popWelcome 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+          }
+          .ultra-online-inner {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 1.25em;
+            background: linear-gradient(90deg,#e0c3fc 0%,#ffd700 60%,#fffbe6 100%);
+            padding: 13px 38px 13px 28px;
+            border-radius: 22px;
+            box-shadow: 0 4px 24px #ffd70099,0 0 0 6px #fffbe6,0 0 40px 0 #ffd70033;
+            font-weight: 900;
+            color: #7c43bd;
+            position: relative;
+            overflow: visible;
+            border: 2.5px solid #7c43bd;
+            letter-spacing: 1.2px;
+            text-shadow: 0 2px 12px #fffbe6,0 0 4px #ffd700,0 0 2px #fffbe6;
+            transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+            animation: popBtn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+          }
+          .ultra-online-inner:hover, .ultra-online-inner:focus {
+            box-shadow: 0 8px 40px #ffd700cc,0 0 0 8px #fffbe6;
+            background: linear-gradient(90deg,#ffd700 0%,#e0c3fc 100%);
+            transform: scale(1.04) translateY(-2px);
+          }
+          .ultra-online-icon {
+            filter: drop-shadow(0 0 16px #ffd700cc);
+            animation: iconUltraSpin 3.5s linear infinite;
+          }
+          .ultra-online-count {
+            font-size: 1.08em;
+            font-weight: 900;
+            color: #e53935;
+            text-shadow: 0 2px 8px #fffbe6,0 0 2px #ffd700;
+            letter-spacing: 1.2px;
+            margin-left: 2px;
+            animation: ultraCountPulse 2.2s ease-in-out infinite;
+          }
+          .ultra-glow {
+            position: absolute;
+            left: -18px; top: 50%;
+            width: 60px; height: 60px;
+            background: radial-gradient(circle, #fffde7 0%, #ffd700 80%, transparent 100%);
+            opacity: 0.5;
+            filter: blur(18px);
+            z-index: 0;
+            transform: translateY(-50%);
+            pointer-events: none;
+            animation: ultraGlowAnim 3.5s linear infinite alternate;
+          }
+          @keyframes ultraGlowAnim {
+            0% { opacity: 0.4; filter: blur(18px); }
+            100% { opacity: 0.7; filter: blur(28px); }
+          }
+          @keyframes ultraCountPulse {
+            0% { color: #e53935; text-shadow: 0 2px 8px #fffbe6,0 0 2px #ffd700; }
+            50% { color: #43a047; text-shadow: 0 2px 16px #ffd700,0 0 8px #fffbe6; }
+            100% { color: #e53935; text-shadow: 0 2px 8px #fffbe6,0 0 2px #ffd700; }
+          }
+          @media (max-width: 600px) {
+            .ultra-online-inner {
+              font-size: 1em;
+              padding: 8px 10vw 8px 4vw;
+              border-radius: 13px;
+              gap: 7px;
+            }
+            .ultra-online-icon {
+              width: 26px !important;
+              height: 26px !important;
+            }
+            .ultra-glow {
+              left: -10px; width: 32px; height: 32px;
+            }
+          }
+        </style>
+        <script>
+          (function(){
+            try {
+              const config = window.CONFIG || {
+                UPDATE_INTERVALS: { ONLINE_COUNT: 5000 },
+                ONLINE_PLAYERS: { MIN: 10000, MAX: 50000, BASE_RANGE: 20000 }
+              };
+              
+              let lastN = 0;
+              let base = Math.floor(Math.random() * config.ONLINE_PLAYERS.BASE_RANGE) + config.ONLINE_PLAYERS.BASE_RANGE;
+              
+              function animateCount(el, from, to, duration) {
+                const start = Date.now();
+                let animationFrame;
+                
+                function step() {
+                  try {
+                    const now = Date.now();
+                    const progress = Math.min(1, (now - start) / duration);
+                    const val = Math.round(from + (to - from) * progress);
+                    if (el) el.textContent = val.toLocaleString('th-TH');
+                    
+                    if(progress < 1) {
+                      animationFrame = requestAnimationFrame(step);
+                    }
+                  } catch (error) {
+                    console.error('Error in animateCount:', error);
+                    if (animationFrame) cancelAnimationFrame(animationFrame);
+                  }
+                }
+                step();
+              }
+              
+              function updateOnlineCount() {
+                try {
+                  let delta = Math.floor(Math.random() * 400) - 200;
+                  base += delta;
+                  if (base < config.ONLINE_PLAYERS.MIN) {
+                    base = config.ONLINE_PLAYERS.MIN + Math.floor(Math.random()*500);
+                  }
+                  if (base > config.ONLINE_PLAYERS.MAX) {
+                    base = config.ONLINE_PLAYERS.MAX - Math.floor(Math.random()*500);
+                  }
+                  
+                  const n = base;
+                  const el = document.getElementById('online-player-count');
+                  if(el) {
+                    animateCount(el, lastN || n, n, 900);
+                    lastN = n;
+                  }
+                } catch (error) {
+                  console.error('Error in updateOnlineCount:', error);
+                }
+              }
+              
+              updateOnlineCount();
+              setInterval(updateOnlineCount, config.UPDATE_INTERVALS.ONLINE_COUNT);
+            } catch (error) {
+              console.error('Error initializing online count:', error);
+            }
+          })();
+          // floating star
+          (function(){
+            const box = document.querySelector('.ultra-deluxe');
+            if (!box) return;
+            const star = document.createElement('span');
+            star.className = 'floating-star';
+            star.innerHTML = `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="starG" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#fffbe6"/><stop offset="80%" stop-color="#ffd700"/><stop offset="100%" stop-color="#e53935"/></radialGradient></defs><polygon points="16,2 19,12 30,13 21,20 24,30 16,24 8,30 11,20 2,13 13,12" fill="url(#starG)" stroke="#bfa100" stroke-width="1.5"/></svg>`;
+            box.appendChild(star);
+          })();
+          // shine sweep
+          (function(){
+            const box = document.querySelector('.ultra-deluxe');
+            if (!box) return;
+            const shine = document.createElement('span');
+            shine.className = 'shine';
+            box.appendChild(shine);
+          })();
+          // ultra-particles effect (glass style, gold+white+ม่วง)
+          (function(){
+            const box = document.querySelector('.ultra-glass .ultra-particles');
+            if (!box) return;
+            function createParticle() {
+              const p = document.createElement('span');
+              p.className = 'ultra-particle';
+              const size = 7 + Math.random()*13;
+              p.style.width = p.style.height = size + 'px';
+              p.style.left = (Math.random()*92+2) + '%';
+              p.style.bottom = (Math.random()*12+2) + '%';
+              p.style.background = [
+                'radial-gradient(circle,#ffd700 0%,#fffbe6 80%,transparent 100%)',
+                'radial-gradient(circle,#fffbe6 0%,#ffd700 80%,transparent 100%)',
+                'radial-gradient(circle,#b39ddb 0%,#fffbe6 80%,transparent 100%)',
+                'radial-gradient(circle,#ff4081 0%,#fffbe6 80%,transparent 100%)'
+              ][Math.floor(Math.random()*4)];
+              p.style.animationDuration = (3.5+Math.random()*2.5)+'s';
+              box.appendChild(p);
+              setTimeout(()=>p.remove(), 5500);
+            }
+            setInterval(createParticle, 250);
+            for(let i=0;i<14;i++) setTimeout(createParticle, i*120);
+          })();
+        </script>
+        <style>
+          .super-welcome {
+            flex:1 1 420px;
+            min-width:260px;
+            max-width:480px;
+            margin: 12px auto 18px auto;
+            padding: 32px 24px 28px 24px;
+            border-radius: 22px;
+            background: linear-gradient(120deg,#fffbe6 0%,#e0c3fc 60%,#b39ddb 100%);
+            box-shadow: 0 8px 40px 0 #b39ddb55, 0 0 0 6px #fffbe6;
+            text-align: center;
+            font-size: 1.25em;
+            color: #4a148c;
+            font-weight: 700;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #7c43bd;
+            animation: popWelcome 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+          }
+          @keyframes popWelcome {
+            0% { transform: scale(0.7) rotate(-8deg); opacity: 0; }
+            60% { transform: scale(1.08) rotate(2deg); opacity: 1; }
+            100% { transform: scale(1) rotate(0deg); opacity: 1; }
+          }
+          .super-welcome .info-icon {
+            display: block;
+            margin: 0 auto 10px auto;
+            animation: iconSpin 2.5s linear infinite;
+          }
+          @keyframes iconSpin {
+            0% { filter: drop-shadow(0 0 0 #ffd700); }
+            50% { filter: drop-shadow(0 0 24px #ffd700cc); }
+            100% { filter: drop-shadow(0 0 0 #ffd700); }
+          }
+          .super-welcome .info-title {
+            display: block;
+            font-size: 1.5em;
+            font-weight: 900;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 12px #fffbe6,0 0 2px #ffd700;
+          }
+          .super-welcome .info-desc {
+            display: block;
+            font-size: 1.08em;
+            font-weight: 500;
+            color: #4a148c;
+            margin-top: 6px;
+            text-shadow: 0 1px 8px #fffbe6, 0 0 2px #ffd700;
+          }
+          .super-welcome::before {
+            content: '';
+            position: absolute;
+            top: -60px; left: -60px;
+            width: 180px; height: 180px;
+            background: radial-gradient(circle, #fffde7 0%, #ffd700 80%, transparent 100%);
+            opacity: 0.5;
+            filter: blur(18px);
+            z-index: 0;
+          }
+          .super-welcome::after {
+            content: '';
+            position: absolute;
+            bottom: -40px; right: -40px;
+            width: 120px; height: 120px;
+            background: radial-gradient(circle, #fffde7 0%, #e0c3fc 80%, transparent 100%);
+            opacity: 0.4;
+            filter: blur(14px);
+            z-index: 0;
+          }
+          @media (max-width: 600px) {
+            .super-welcome {
+              max-width: 95vw;
+              padding: 18px 6vw 16px 6vw;
+              font-size: 1em;
+              border-radius: 12px;
+            }
+            .super-welcome .info-title {
+              font-size: 1.1em;
+            }
+            .super-welcome .info-desc {
+              font-size: 0.98em;
+            }
+          }
+        </style>
+        <div
+          id="chat-review"
+          style="flex:1 1 360px; min-width:240px; max-width:360px; padding: 16px 10px; border: 2px solid #0fc7eb; border-radius: 14px; background: linear-gradient(135deg,#2f00ff 0%,#6ec6ff 100%); box-sizing:border-box;"
+        >
+          <h2 style="text-align:center;color:#fefe0b;text-shadow:0 1px 8px #2f00ff,0 0 4px #fff,0 0 12px #0fc7eb;margin-bottom:12px;font-size:1.2rem;display:flex;align-items:center;justify-content:center;gap:8px;">
+            <span style="display:inline-flex;align-items:center;">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:4px;filter:drop-shadow(0 0 8px #ffd700cc);">
+                <defs>
+                  <radialGradient id="starGradient" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#fffbe6"/>
+                    <stop offset="80%" stop-color="#ffd700"/>
+                    <stop offset="100%" stop-color="#e53935"/>
+                  </radialGradient>
+                </defs>
+                <polygon points="14,2 17,10.5 26,11 19,17 21,26 14,21.5 7,26 9,17 2,11 11,10.5" fill="url(#starGradient)" stroke="#bfa100" stroke-width="1.2"/>
+              </svg>
+            </span>
+            รีวิวจากลูกค้า
+          </h2>
+          <!-- ส่วนรีวิวจะถูกเติมโดย JS -->
+        </div>
+  <div id="withdraw-table" style="flex:1 1 340px; min-width:260px; max-width:380px; margin: 8px; padding:0; box-sizing:border-box;"></div>
+      </div>
+
+      <style>
+        .review-withdraw-row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: stretch;
+          gap: 16px;
+          margin-bottom: 24px;
+        }
+        .withdraw-list-box {
+          max-width: 320px;
+          margin: 18px auto;
+          background: linear-gradient(135deg,#fffbe6 0%,#ffe082 60%,#ffd700 100%);
+          border-radius: 14px;
+          box-shadow: 0 2px 10px 0 #ffd70099, 0 0 0 3px #fffbe6;
+          padding: 14px 8px 14px 8px;
+          position: relative;
+          overflow: hidden;
+        }
+        .withdraw-list-box::before {
+          content: '';
+          position: absolute;
+          top: -60px; left: -60px;
+          width: 180px; height: 180px;
+          background: radial-gradient(circle, #fffde7 0%, #ffd700 80%, transparent 100%);
+          opacity: 0.5;
+          filter: blur(12px);
+          z-index: 0;
+        }
+        .withdraw-list-box::after {
+          content: '';
+          position: absolute;
+          bottom: -40px; right: -40px;
+          width: 120px; height: 120px;
+          background: radial-gradient(circle, #fffde7 0%, #ffe082 80%, transparent 100%);
+          opacity: 0.4;
+          filter: blur(10px);
+          z-index: 0;
+        }
+        .withdraw-header {
+          max-width: 320px;
+          margin: 0 auto 12px auto;
+          background: linear-gradient(90deg,#fffbe6 0%,#ffd700 100%);
+          border-radius: 16px;
+          box-shadow: 0 2px 10px #ffd70099;
+          padding: 12px 16px 10px 16px;
+          text-align: center;
+          font-size: 1.1em;
+          font-weight: bold;
+          color: #bfa100;
+          letter-spacing: 1px;
+          position: relative;
+          z-index: 1;
+        }
+        .withdraw-list {
+          max-width: 320px;
+          margin: 0 auto;
+          padding: 0;
+          position: relative;
+          z-index: 1;
+        }
+        .withdraw-card {
+          display: flex;
+          align-items: center;
+          background: linear-gradient(90deg,#fffbe6 0%,#ffe082 60%,#ffd700 100%);
+          border-radius: 3px;
+          box-shadow: 0 1px 2px #ffd70044, 0 0 0 1px #fffbe6;
+          margin-bottom: 2px;
+          padding: 10px 2px;
+          border-left: 2px solid #ffd700;
+          transition: box-shadow 0.2s, transform 0.2s;
+          position: relative;
+          animation: popCard 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        @keyframes popCard {
+          0% { transform: scale(0.7) rotate(-8deg); opacity: 0; }
+          60% { transform: scale(1.08) rotate(2deg); opacity: 1; }
+          100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+        .withdraw-card:first-child {
+          border-left-color: #ffecb3;
+          box-shadow: 0 6px 32px #ffd700cc, 0 0 0 6px #fffbe6;
+          background: linear-gradient(90deg,#fffbe6 0%,#ffe082 60%,#ffd700 100%);
+          animation: popCardFirst 1s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        @keyframes popCardFirst {
+          0% { transform: scale(0.6) rotate(-12deg); opacity: 0; }
+          60% { transform: scale(1.12) rotate(4deg); opacity: 1; }
+          100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+        .withdraw-bank {
+          flex: 0 0 14px;
+          margin-right: 3px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        }
+        .withdraw-bank img {
+          height: 38px;
+          width: 38px;
+          border-radius: 50%;
+          border: 2px solid #ffd700;
+          background: #fff;
+          box-shadow: 0 0 12px #ffd70099;
+        }
+        .withdraw-info {
+          flex: 1 1 0;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          font-size: 1.08em;
+        }
+        .withdraw-name {
+          font-weight: 700;
+          color: #111;
+          margin-bottom: 2px;
+          font-size: 0.7em;
+          text-shadow: 0 1px 8px #fffbe6, 0 0 2px #ffd700;
+        }
+        .withdraw-date {
+          font-size: 0.85em;
+          color: #444;
+          text-shadow: 0 1px 6px #fffbe6;
+        }
+        .withdraw-amount {
+          font-size: 0.8em;
+          color: #ff4081;
+          font-weight: bold;
+          text-shadow: 0 1px 8px #fffbe6, 0 0 2px #ffd700;
+        }
+        .withdraw-status {
+          font-size: 0.8em;
+          font-weight: bold;
+          margin-left: 18px;
+          color: #fff;
+          background: linear-gradient(90deg,#ffd700 0%,#ff4081 100%);
+          border-radius: 12px;
+          padding: 6px 18px;
+          box-shadow: 0 2px 12px #ffd70099;
+          text-shadow: 0 1px 8px #fffbe6, 0 0 2px #ffd700;
+        }
+        .withdraw-card:first-child .withdraw-status {
+          color: #fff;
+          background: linear-gradient(90deg,#ffecb3 0%,#ffd700 100%);
+          box-shadow: 0 4px 18px #ffd700cc;
+          position: relative;
+          padding-left: 38px;
+        }
+        .withdraw-card:first-child .withdraw-status::before {
+          content: '';
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 22px;
+          height: 22px;
+          background: none;
+          display: inline-block;
+          z-index: 2;
+          /* SVG นาฬิกาใหม่แบบ gradient ทอง-แดงและเข็มแดง */
+          background-image: url('data:image/svg+xml;utf8,<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="g1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="%23fffbe6"/><stop offset="80%" stop-color="%23ffd700"/><stop offset="100%" stop-color="%23e53935"/></radialGradient></defs><circle cx="11" cy="11" r="10" fill="url(%23g1)" stroke="%23bfa100" stroke-width="2"/><circle cx="11" cy="11" r="7" fill="none" stroke="%23fff" stroke-width="1.2"/><rect x="10.2" y="5.2" width="1.6" height="6.2" rx="0.8" fill="%23e53935"/><rect x="10.2" y="11" width="5.2" height="1.6" rx="0.8" fill="%23e53935"/><circle cx="11" cy="11" r="1.2" fill="%23fff" stroke="%23e53935" stroke-width="0.7"/></svg>');
+          background-size: 22px 22px;
+          background-repeat: no-repeat;
+          animation: spinClock 1.2s linear infinite;
+        }
+          @keyframes spinClock {
+            0% { transform: translateY(-50%) rotate(0deg); }
+            100% { transform: translateY(-50%) rotate(360deg); }
+          }
+        .withdraw-card:not(:first-child) .withdraw-status {
+          color: #fff;
+          background: linear-gradient(90deg,#ffd700 0%,#ff4081 100%);
+        }
+        @media (max-width: 600px) {
+          .withdraw-list-box {
+            max-width: 85vw;
+            margin: 0 auto 10px auto;
+            padding: 6px 2vw 6px 2vw;
+            border-radius: 8px;
+          }
+          .withdraw-header {
+            max-width: 100vw;
+            margin: 10px 0 10px 0;
+            padding: 14px 2vw 10px 2vw;
+            border-radius: 16px;
+            font-size: 1.2em;
+          }
+          .withdraw-list {
+            max-width: 100vw;
+            margin: 0 0;
+            padding: 0 2vw;
+          }
+          .withdraw-card {
+            padding: 7px 3px;
+            margin-bottom: 8px;
+            border-radius: 9px;
+          }
+          .withdraw-bank {
+            flex-basis: 22px;
+            margin-right: 5px;
+          }
+          .withdraw-bank img {
+            height: 18px;
+            width: 18px;
+          }
+          .withdraw-info {
+            font-size: 0.85em;
+          }
+          .withdraw-amount {
+            font-size: 1.18em;
+          }
+          .withdraw-status {
+            font-size: 0.85em;
+            padding: 4px 10px;
+            border-radius: 7px;
+          }
+        }
+      </style>
+
+      <script>
+        const names = [
+          "สมชาย ใจดี","สุภาวดี รัตนกุล","วราภรณ์ ศรีสุข","กิตติชัย พงษ์สวัสดิ์","อารีย์ วัฒนกุล","ปวีณ์นุช ศรีสมบัติ","ณัฐวุฒิ พูนผล","กานต์ สุขสันต์","มานะ ทองดี","ธีรศักดิ์ รัตนา",
+          "สุรีย์พร สายใจ","วรพล ศิริวัฒน์","อรทัย พิทักษ์","ศุภชัย รุ่งเรือง","สุภาวดี สายทอง","ณัฐพล สาระดี","จิราภา รัตนมณี","กิตติ สายสมร","ศิริพร ศรีสวัสดิ์","ประเสริฐ พิทักษ์",
+          "อัญชลี ศรีสมบัติ","สมบัติ พูนสุข","นฤมล รัตนกุล","วุฒิชัย ศรีสุข","สุชาติ ใจดี","อรอนงค์ พิทักษ์","พิมพ์ใจ สายใจ","สมพงษ์ รุ่งเรือง","วาสนา สายทอง","ประภาพร สาระดี",
+          "สุรชัย รัตนา","อุทัย รัตนมณี","จารุวรรณ สายสมร","สมฤดี ศรีสวัสดิ์","วรฤทธิ์ พิทักษ์","สุรางค์ พูนสุข","อารีรัตน์ รัตนกุล","สมศักดิ์ ศรีสุข","วรรณา ใจดี","ประเสริฐศักดิ์ พิทักษ์"
+        ];
+
+        const banks = [
+          {img:"images/bank/kbank.jpg",name:"KBank"},
+          {img:"images/bank/scb.jpg",name:"SCB"},
+          {img:"images/bank/bbl.jpg",name:"BBL"},
+          {img:"images/bank/ktb.jpg",name:"KTB"},
+          {img:"images/bank/TMB.jpg",name:"TMB"},
+          {img:"images/bank/BAY.jpg",name:"BAY"},
+          {img:"images/bank/Wallet.webp",name:"Wallet"},
+          {img:"images/bank/KKP.jpg",name:"KKP"},
+          {img:"images/bank/BAAC.png",name:"BAAC"},
+          {img:"images/bank/UOB.jpg",name:"UOB"},
+          {img:"images/bank/CIMB.jpg",name:"CIMB"},
+          {img:"images/bank/GSB.jpg",name:"GSB"}
+        ];
+
+        function getRandomWithdraws(n) {
+          const result = [];
+          const today = new Date().toISOString().slice(0,10);
+          for(let i=0;i<n;i++) {
+            const name = names[Math.floor(Math.random()*names.length)];
+            const bank = banks[Math.floor(Math.random()*banks.length)];
+            const date = today;
+            // สุ่มจำนวนเงิน: 50% หลักพัน, 40% หลักหมื่น, 10% อื่นๆ
+            let rand = Math.random();
+            let amount = 0;
+            if(rand < 0.5) {
+              // 50% หลักพัน (1,000 - 9,900)
+              amount = (Math.floor(Math.random()*90)+10)*100;
+            } else if(rand < 0.9) {
+              // 40% หลักหมื่น (10,000 - 99,000)
+              amount = (Math.floor(Math.random()*90)+10)*1000;
+            } else {
+              // 10% อื่นๆ (100 - 900)
+              amount = (Math.floor(Math.random()*9)+1)*100;
+            }
+            result.push({
+              bank: bank.img,
+              bankName: bank.name,
+              name,
+              date,
+              amount: amount.toLocaleString('th-TH') + " บาท"
+            });
+          }
+          return result;
+        }
+
+        let currentWithdraws = getRandomWithdraws(4);
+        let currentTimes = Array(4).fill(""); // เก็บเวลาของแต่ละรายการ
+
+        function renderWithdrawTable(items) {
+          return `
+            <div class="withdraw-list-box">
+              <div style="text-align:center;margin-bottom:12px;">
+                <span style="font-size:1.25em;font-weight:bold;color:#7c43bd;">
+                  <span style="vertical-align:middle;display:inline-flex;align-items:center;gap:8px;">
+                    <svg class="withdraw-title-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right:4px;">
+                      <circle cx="14" cy="14" r="13" fill="#ffd700" stroke="#bfa100" stroke-width="2"/>
+                      <text x="14" y="19" text-anchor="middle" font-size="15" font-family="Arial" fill="#fff" font-weight="bold">฿</text>
+                    </svg>
+                    รายการถอนเงินล่าสุด
+                    <svg class="withdraw-title-icon-after" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:4px;vertical-align:middle;">
+                      <circle cx="14" cy="14" r="13" fill="#ffd700" stroke="#bfa100" stroke-width="2"/>
+                      <text x="14" y="19" text-anchor="middle" font-size="15" font-family="Arial" fill="#fff" font-weight="bold">฿</text>
+                    </svg>
+                  </span>
+                </span>
+              </div>
+              <div class="withdraw-list">
+                  ${items.map((w,i) => {
+                    let status = i === 0 ? "รอดำเนินการ" : "สำเร็จ";
+                    let timeStr = currentTimes[i] ? `<span class=\"withdraw-date\">${currentTimes[i]}</span>` : "";
+                    let delayClass = i > 0 ? ` delay-${i}` : '';
+                    let statusHtml = i === 0
+                      ? '<span style=\"font-weight:bold;color:#e53935;\">รอดำเนินการ</span>'
+                      : `<span class=\"withdraw-success-animate${delayClass}\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" style=\"vertical-align:middle;margin-right:4px;\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"9\" cy=\"9\" r=\"9\" fill=\"#4caf50\"/><path d=\"M5 9.5l3 3 5-5\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>สำเร็จ</span>`;
+                    return `
+                    <div class=\"withdraw-card\">
+                      <div class=\"withdraw-bank\">
+                        <img src=\"${w.bank}\" alt=\"${w.bankName}\">
+                      </div>
+                      <div class=\"withdraw-info\">
+                        <span class=\"withdraw-name\">${w.name}</span>
+                        <span class=\"withdraw-date\">${w.date} ${timeStr}</span>
+                        <span class=\"withdraw-amount\">${w.amount}</span>
+                      </div>
+                      <span class=\"withdraw-status\">${statusHtml}</span>
+                    </div>
+                    `;
+                }).join('')}
+              </div>
+            </div>
+          `;
+        }
+
+        function updateWithdraws() {
+          // สุ่มรายการใหม่ที่ไม่ซ้ำกับ 4 รายการปัจจุบัน
+          let candidates = getRandomWithdraws(40).filter(w =>
+            !currentWithdraws.some(cw =>
+              cw.name === w.name &&
+              cw.date === w.date &&
+              cw.amount === w.amount &&
+              cw.bank === w.bank
+            )
+          );
+          if (candidates.length === 0) candidates = getRandomWithdraws(40);
+          const newWithdraw = candidates[Math.floor(Math.random() * candidates.length)];
+          // ขยับรายการ: รายใหม่ขึ้นบนสุด (รอดำเนินการ), รายที่ 2,3,4 เป็นสำเร็จ
+          currentWithdraws = [newWithdraw, ...currentWithdraws.slice(0, 3)];
+          // อัพเดทเวลาเฉพาะรายการใหม่
+          const now = new Date();
+          const timeStr = now.toLocaleTimeString('th-TH', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+          currentTimes = [timeStr, ...currentTimes.slice(0, 3)];
+          document.getElementById('withdraw-table').innerHTML = renderWithdrawTable(currentWithdraws);
+          scheduleNextUpdate(); // เรียกต่อเนื่องแบบสุ่มเวลา
+        }
+
+        // ฟังก์ชันสุ่มเวลา 3-8 วินาที
+        function scheduleNextUpdate() {
+          const ms = Math.floor(Math.random() * (8000 - 3000 + 1)) + 3000;
+          setTimeout(updateWithdraws, ms);
+        }
+
+        document.getElementById('withdraw-table').innerHTML = renderWithdrawTable(currentWithdraws);
+        scheduleNextUpdate(); // เริ่มต้นด้วยการสุ่มเวลา
+      </script>
+
+      <!--อัตราการชนะ-->
+      <div class="gallery" aria-label="แกลเลอรีรูปภาพ" style="display: flex; gap: 60px; align-items: center; justify-content: center;">
+		<!-- คอลัมน์ที่ 1 -->
+		<div class="img-pair" style="background: linear-gradient(135deg,#e3f0ff 0%,#fafdff 100%); box-shadow:0 2px 12px #b3d1f7; padding: 16px 20px; border-radius: 18px; display: flex; flex-direction: column; align-items: center;">
+			<div style="display: flex; justify-content: center; gap: 12px;">
+				<img id="img-1" src="images/เกมสล็อก/1.png" alt="รูปที่ 1" width="80" height="80" style="border: 2px solid #4a90e2; border-radius: 12px;">
+				<img id="img-2" src="images/เกมสล็อก/2.png" alt="รูปที่ 2" width="80" height="80" style="border: 2px solid #4a90e2; border-radius: 12px;">
+			</div>
+			<div class="progress-label" style="margin-top:10px; font-size:15px; color:#2176ae; font-weight:600;">อัตราการชนะ</div>
+			<div class="progress-wrap" style="position: relative; width: 180px; margin-top: 6px;">
+				<progress id="progress-1" value="70" max="100" style="width: 180px; height:18px; background:#e3f0ff; border-radius:9px;"></progress>
+				<span id="percent-1" style="position: absolute; left: 0; top: 0; width: 180px; height: 100%; display: flex; align-items: center; justify-content: center; font-size:15px; color:#ffffff; font-weight:600;">70%</span>
+			</div>
+		</div>
+		<!-- คอลัมน์ที่ 2 -->
+		<div class="img-pair" style="background: linear-gradient(135deg,#e3f0ff 0%,#fafdff 100%); box-shadow:0 2px 12px #b3d1f7; padding: 16px 20px; border-radius: 18px; display: flex; flex-direction: column; align-items: center;">
+			<div style="display: flex; justify-content: center; gap: 12px;">
+				<img id="img-3" src="images/เกมสล็อก/3.png" alt="รูปที่ 3" width="80" height="80" style="border: 2px solid #4a90e2; border-radius: 12px;">
+				<img id="img-4" src="images/เกมสล็อก/4.png" alt="รูปที่ 4" width="80" height="80" style="border: 2px solid #4a90e2; border-radius: 12px;">
+			</div>
+			<div class="progress-label" style="margin-top:10px; font-size:15px; color:#2176ae; font-weight:600;">อัตราการชนะ</div>
+			<div class="progress-wrap" style="position: relative; width: 180px; margin-top: 6px;">
+				<progress id="progress-2" value="40" max="100" style="width: 180px; height:18px; background:#e3f0ff; border-radius:9px;"></progress>
+				<span id="percent-2" style="position: absolute; left: 0; top: 0; width: 180px; height: 100%; display: flex; align-items: center; justify-content: center; font-size:15px; color:#fbfbfb; font-weight:600;">40%</span>
+			</div>
+		</div>
+		<!-- คอลัมน์ที่ 3 (เพิ่มใหม่) -->
+		<div class="img-pair" style="background: linear-gradient(135deg,#e3f0ff 0%,#fafdff 100%); box-shadow:0 2px 12px #b3d1f7; padding: 16px 20px; border-radius: 18px; display: flex; flex-direction: column; align-items: center;">
+			<div style="display: flex; justify-content: center; gap: 12px;">
+				<img id="img-5" src="images/เกมสล็อก/5.png" alt="รูปที่ 5" width="80" height="80" style="border: 2px solid #4a90e2; border-radius: 12px;">
+				<img id="img-6" src="images/เกมสล็อก/6.png" alt="รูปที่ 6" width="80" height="80" style="border: 2px solid #4a90e2; border-radius: 12px;">
+			</div>
+			<div class="progress-label" style="margin-top:10px; font-size:15px; color:#2176ae; font-weight:600;">อัตราการชนะ</div>
+			<div class="progress-wrap" style="position: relative; width: 180px; margin-top: 6px;">
+				<progress id="progress-3" value="55" max="100" style="width: 180px; height:18px; background:#e3f0ff; border-radius:9px;"></progress>
+				<span id="percent-3" style="position: absolute; left: 0; top: 0; width: 180px; height: 100%; display: flex; align-items: center; justify-content: center; font-size:15px; color:#fbfbfb; font-weight:600;">55%</span>
+			</div>
+		</div>
+		<!-- คอลัมน์ที่ 4 (เพิ่มใหม่) -->
+		<div class="img-pair" style="background: linear-gradient(135deg,#e3f0ff 0%,#fafdff 100%); box-shadow:0 2px 12px #b3d1f7; padding: 16px 20px; border-radius: 18px; display: flex; flex-direction: column; align-items: center;">
+			<div style="display: flex; justify-content: center; gap: 12px;">
+				<img id="img-7" src="images/เกมสล็อก/7.png" alt="รูปที่ 7" width="80" height="80" style="border: 2px solid #4a90e2; border-radius: 12px;">
+				<img id="img-8" src="images/เกมสล็อก/8.png" alt="รูปที่ 8" width="80" height="80" style="border: 2px solid #4a90e2; border-radius: 12px;">
+			</div>
+			<div class="progress-label" style="margin-top:10px; font-size:15px; color:#2176ae; font-weight:600;">อัตราการชนะ</div>
+			<div class="progress-wrap" style="position: relative; width: 180px; margin-top: 6px;">
+				<progress id="progress-4" value="60" max="100" style="width: 180px; height:18px; background:#e3f0ff; border-radius:9px;"></progress>
+				<span id="percent-4" style="position: absolute; left: 0; top: 0; width: 180px; height: 100%; display: flex; align-items: center; justify-content: center; font-size:15px; color:#fbfbfb; font-weight:600;">60%</span>
+			</div>
+		</div>
+	</div>
+
+      <style>
+		@media (max-width: 600px) {
+			.gallery {
+				display: grid !important;
+				grid-template-columns: 1fr 1fr !important;
+				gap: 10px !important;
+				margin-top: 16px !important;
+			}
+			.img-pair {
+				padding: 10px 8px !important;
+				border-radius: 10px !important;
+				box-shadow: 0 1px 6px #b3d1f7 !important;
+				max-width: 170px;
+			}
+			.img-pair img {
+				width: 60px !important;
+				height: 60px !important;
+				border-radius: 8px !important;
+				border-width: 1.5px !important;
+			}
+			.img-pair > div:first-child {
+				gap: 7px !important;
+			}
+			.img-pair .progress-label,
+			.img-pair > div:nth-child(2) {
+				font-size: 13px !important;
+				margin-top: 7px !important;
+			}
+			.img-pair .progress-wrap {
+				display: flex !important;
+				justify-content: center !important;
+				align-items: center !important;
+				width: 100%;
+				margin-top: 6px !important;
+				position: relative;
+			}
+			.img-pair progress {
+				width: 160px !important;
+				height: 12px !important;
+				border-radius: 6px !important;
+			}
+			.img-pair span[id^="percent-"] {
+				font-size: 12px !important;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 160px;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				pointer-events: none;
+			}
+		}
+		.gallery {
+			margin-top: 48px;
+		}
+		.progress-red::-webkit-progress-value { background: #e74c3c; }
+		.progress-yellow::-webkit-progress-value { background: #f7b731; }
+		.progress-green::-webkit-progress-value { background: #27ae60; }
+		.progress-red::-moz-progress-bar { background: #e74c3c; }
+		.progress-yellow::-moz-progress-bar { background: #f7b731; }
+		.progress-green::-moz-progress-bar { background: #27ae60; }
+		.progress-red { color: #e74c3c; }
+		.progress-yellow { color: #f7b731; }
+		.progress-green { color: #27ae60; }
+	</style>
+
+      <script>
+		const imgIds = ['img-1', 'img-2', 'img-3', 'img-4', 'img-5', 'img-6', 'img-7', 'img-8'];
+		const imgBase = 'images/เกมสล็อก/';
+		const imgCount = 126;
+		const progressIds = ['progress-1', 'progress-2', 'progress-3', 'progress-4'];
+		const percentSpanIds = ['percent-1', 'percent-2', 'percent-3', 'percent-4'];
+
+		function getRandomImages() {
+			const nums = [];
+			while (nums.length < 8) {
+				const n = Math.floor(Math.random() * imgCount) + 1;
+				if (!nums.includes(n)) nums.push(n);
+			}
+			return nums.map(num => `${imgBase}${num}.png`);
+		}
+
+		function getRandomPercent() {
+			return Math.floor(Math.random() * (99 - 30 + 1)) + 30;
+		}
+
+		function getAccentClass(percent) {
+			if (percent <= 60) return 'progress-red';
+			if (percent <= 80) return 'progress-yellow';
+			return 'progress-green';
+		}
+
+		function getBoxGradient(percent) {
+			if (percent <= 60) return 'linear-gradient(135deg,#ffe3e3 0%,#fffafd 100%)';
+			if (percent <= 80) return 'linear-gradient(135deg,#fffbe3 0%,#fffefd 100%)';
+			return 'linear-gradient(135deg,#e3ffe9 0%,#fafdff 100%)';
+		}
+
+		function updateImages() {
+			try {
+				const imgs = getRandomImages();
+				imgIds.forEach((id, i) => {
+					try {
+						const el = document.getElementById(id);
+						if (el && imgs[i]) {
+							el.src = imgs[i];
+							// เพิ่ม error handler สำหรับรูปภาพ
+							el.onerror = function() {
+								console.warn(`Failed to load image: ${imgs[i]}`);
+								// ใช้รูปสำรองหากโหลดไม่ได้
+								this.src = `images/เกมสล็อก/${Math.floor(Math.random()*126)+1}.png`;
+							};
+						}
+					} catch (error) {
+						console.error(`Error updating image ${id}:`, error);
+					}
+				});
+				
+				progressIds.forEach((pid, i) => {
+					try {
+						const percent = getRandomPercent();
+						const progressEl = document.getElementById(pid);
+						const spanEl = document.getElementById(percentSpanIds[i]);
+						const boxEl = progressEl ? progressEl.closest('.img-pair') : null;
+						
+						if (progressEl) {
+							progressEl.value = percent;
+							progressEl.classList.remove('progress-red', 'progress-yellow', 'progress-green');
+							progressEl.classList.add(getAccentClass(percent));
+						}
+						if (spanEl) spanEl.textContent = percent + '%';
+						if (boxEl) boxEl.style.background = getBoxGradient(percent);
+					} catch (error) {
+						console.error(`Error updating progress ${pid}:`, error);
+					}
+				});
+			} catch (error) {
+				console.error('Error in updateImages:', error);
+			}
+		}
+
+		const imageUpdateInterval = (window.CONFIG && window.CONFIG.UPDATE_INTERVALS && window.CONFIG.UPDATE_INTERVALS.IMAGES) || 10000;
+		setInterval(updateImages, imageUpdateInterval);
+		updateImages();
+	</script>
+    </main>
+
+    <script>
+      // ระบบเก็บและวิเคราะห์ข้อมูลลูกค้า
+      window.CustomerAnalytics = {
+        // เก็บข้อมูลผู้เข้าชม
+        initVisitor: function() {
+          try {
+            const sessionData = {
+              timestamp: new Date().toISOString(),
+              userAgent: navigator.userAgent,
+              screen: `${screen.width}x${screen.height}`,
+              viewport: `${window.innerWidth}x${window.innerHeight}`,
+              referrer: document.referrer || 'direct',
+              url: window.location.href,
+              sessionId: Date.now() + '-' + Math.random().toString(36).substr(2, 9),
+              country: Intl.DateTimeFormat().resolvedOptions().timeZone || 'unknown'
+            };
+            
+            sessionStorage.setItem('visitor_data', JSON.stringify(sessionData));
+            
+            // บันทึกสถิติรวม
+            this.updateDailyStats();
+            
+            // แสดงข้อมูลใน Console
+            console.log('🎯 === ระบบวิเคราะห์ลูกค้า ===');
+            console.log('👤 ผู้เข้าชม:', sessionData.sessionId.slice(-6));
+            console.log('📱 อุปกรณ์:', sessionData.viewport.split('x')[0] < 768 ? 'มือถือ' : 'คอมพิวเตอร์');
+            console.log('🌐 แหล่งที่มา:', this.getTrafficSource(sessionData.referrer));
+            console.log('⏰ เวลาเข้า:', new Date().toLocaleString('th-TH'));
+            console.log('📊 สถิติวันนี้:', this.getTodayStats());
+            
+            // ส่งข้อมูลไป Facebook Pixel
+            if (typeof fbq === 'function') {
+              fbq('track', 'PageView', {
+                session_id: sessionData.sessionId,
+                device_type: sessionData.viewport.split('x')[0] < 768 ? 'mobile' : 'desktop',
+                traffic_source: this.getTrafficSource(sessionData.referrer),
+                screen_resolution: sessionData.screen,
+                viewport_size: sessionData.viewport,
+                timezone: sessionData.country,
+                page_url: sessionData.url
+              });
+              
+              // ส่งข้อมูล Custom Audience
+              fbq('trackCustom', 'VisitorProfile', {
+                visitor_type: 'new_visitor',
+                device_category: sessionData.viewport.split('x')[0] < 768 ? 'mobile' : 'desktop',
+                traffic_source: this.getTrafficSource(sessionData.referrer)
+              });
+            }
+          } catch(e) {}
+        },
+
+        // วิเคราะห์แหล่งที่มา
+        getTrafficSource: function(referrer) {
+          if (!referrer || referrer === 'direct') return 'Direct';
+          if (referrer.includes('facebook.com')) return 'Facebook';
+          if (referrer.includes('google.com')) return 'Google';
+          if (referrer.includes('instagram.com')) return 'Instagram';
+          if (referrer.includes('youtube.com')) return 'YouTube';
+          if (referrer.includes('tiktok.com')) return 'TikTok';
+          return 'Other';
+        },
+
+        // อัปเดตสถิติรายวัน
+        updateDailyStats: function() {
+          const today = new Date().toISOString().split('T')[0];
+          const stats = JSON.parse(localStorage.getItem('daily_stats') || '{}');
+          
+          if (!stats[today]) {
+            stats[today] = { visitors: 0, pageviews: 0, signups: 0, contacts: 0 };
+          }
+          
+          stats[today].visitors++;
+          stats[today].pageviews++;
+          
+          // เก็บแค่ 30 วันล่าสุด
+          const dates = Object.keys(stats).sort().slice(-30);
+          const newStats = {};
+          dates.forEach(date => newStats[date] = stats[date]);
+          
+          localStorage.setItem('daily_stats', JSON.stringify(newStats));
+        },
+
+        // ดูสถิติวันนี้
+        getTodayStats: function() {
+          const today = new Date().toISOString().split('T')[0];
+          const stats = JSON.parse(localStorage.getItem('daily_stats') || '{}');
+          return stats[today] || { visitors: 0, pageviews: 0, signups: 0, contacts: 0 };
+        },
+
+        // บันทึกการกดปุ่ม
+        trackButtonClick: function(buttonData) {
+          try {
+            const clickData = {
+              ...buttonData,
+              timestamp: new Date().toISOString(),
+              session_id: JSON.parse(sessionStorage.getItem('visitor_data') || '{}').sessionId
+            };
+            
+            // เก็บในหน่วยความจำ
+            const clicks = JSON.parse(localStorage.getItem('button_clicks') || '[]');
+            clicks.push(clickData);
+            localStorage.setItem('button_clicks', JSON.stringify(clicks.slice(-100)));
+            
+            // อัปเดตสถิติรายวัน
+            const today = new Date().toISOString().split('T')[0];
+            const stats = JSON.parse(localStorage.getItem('daily_stats') || '{}');
+            if (stats[today]) {
+              if (buttonData.action === 'register') {
+                stats[today].signups++;
+                // ส่งข้อมูล Conversion Value ไป Facebook
+                if (typeof fbq === 'function') {
+                  fbq('trackCustom', 'SignupConversion', {
+                    conversion_value: 100, // มูลค่าการสมัคร (บาท)
+                    daily_signups: stats[today].signups,
+                    conversion_source: buttonData.location
+                  });
+                }
+              }
+              if (buttonData.action === 'contact') {
+                stats[today].contacts++;
+                // ส่งข้อมูล Lead ไป Facebook  
+                if (typeof fbq === 'function') {
+                  fbq('trackCustom', 'ContactLead', {
+                    lead_value: 50, // มูลค่า Lead (บาท)
+                    daily_contacts: stats[today].contacts,
+                    lead_source: buttonData.location
+                  });
+                }
+              }
+              localStorage.setItem('daily_stats', JSON.stringify(stats));
+            }
+            
+            // แสดงในคอนโซล
+            console.log('🖱️ === การกดปุ่ม ===');
+            console.log('🎯 ปุ่ม:', buttonData.button_text);
+            console.log('📍 ตำแหน่ง:', buttonData.location);
+            console.log('⏰ เวลา:', new Date().toLocaleString('th-TH'));
+            console.log('📈 สถิติวันนี้:', this.getTodayStats());
+            
+            return clickData;
+          } catch(e) { return null; }
+        },
+
+        // สร้างรายงานสรุป
+        generateReport: function() {
+          const report = {
+            today: this.getTodayStats(),
+            totalClicks: JSON.parse(localStorage.getItem('button_clicks') || '[]').length,
+            topButtons: this.getTopButtons(),
+            deviceStats: this.getDeviceStats(),
+            trafficSources: this.getTrafficSources()
+          };
+          
+          console.log('📊 === รายงานสรุป ===');
+          console.log('📈 วันนี้:', report.today);
+          console.log('🖱️ ปุ่มยอดนิยม:', report.topButtons);
+          console.log('📱 อุปกรณ์:', report.deviceStats);
+          console.log('🌐 แหล่งที่มา:', report.trafficSources);
+          
+          return report;
+        },
+
+        // วิเคราะห์ปุ่มยอดนิยม
+        getTopButtons: function() {
+          const clicks = JSON.parse(localStorage.getItem('button_clicks') || '[]');
+          const buttonCount = {};
+          
+          clicks.forEach(click => {
+            const key = `${click.button_text} (${click.location})`;
+            buttonCount[key] = (buttonCount[key] || 0) + 1;
+          });
+          
+          return Object.entries(buttonCount)
+            .sort(([,a], [,b]) => b - a)
+            .slice(0, 5)
+            .map(([name, count]) => ({ name, count }));
+        },
+
+        // วิเคราะห์อุปกรณ์
+        getDeviceStats: function() {
+          // ใช้ viewport ปัจจุบัน
+          const isMobile = window.innerWidth < 768;
+          return {
+            current: isMobile ? 'Mobile' : 'Desktop',
+            mobile_percentage: isMobile ? 100 : 0
+          };
+        },
+
+        // วิเคราะห์แหล่งที่มา
+        getTrafficSources: function() {
+          const visitorData = JSON.parse(sessionStorage.getItem('visitor_data') || '{}');
+          const source = this.getTrafficSource(visitorData.referrer);
+          
+          const sources = {};
+          sources[source] = 1;
+          
+          return sources;
+        }
+      };
+
+      // เริ่มต้นระบบวิเคราะห์
+      CustomerAnalytics.initVisitor();
+
+      // คำสั่งพิเศษในคอนโซล (กด F12 แล้วพิมพ์)
+      window.showReport = () => CustomerAnalytics.generateReport();
+      window.showStats = () => CustomerAnalytics.getTodayStats();
+      window.showClicks = () => JSON.parse(localStorage.getItem('button_clicks') || '[]');
+      window.clearData = () => {
+        localStorage.removeItem('button_clicks');
+        localStorage.removeItem('daily_stats');
+        sessionStorage.removeItem('visitor_data');
+        console.log('✅ ลบข้อมูลทั้งหมดแล้ว');
+      };
+
+      // แสดงคำสั่งที่มี
+      setTimeout(() => {
+        console.log('🔧 === คำสั่งพิเศษสำหรับเจ้าของเว็บ ===');
+        console.log('📊 showReport() - ดูรายงานสรุป');
+        console.log('📈 showStats() - ดูสถิติวันนี้');
+        console.log('🖱️ showClicks() - ดูประวัติการกดปุ่ม');
+        console.log('� showHotLeads() - ดูลูกค้าที่สนใจสูง');
+        console.log('�🗑️ clearData() - ลบข้อมูลทั้งหมด');
+        console.log('==========================================');
+      }, 2000);
+
+      window.CONFIG = {
+        SITE_URL: 'https://yakuzabet1.com/',
+        LINE_URL: 'https://lin.ee/JpWODqE',
+        UPDATE_INTERVALS: {
+          REVIEWS: 5000,
+          WITHDRAWS: 3000,
+          ONLINE_COUNT: 5000,
+          IMAGES: 10000
+        },
+        ONLINE_PLAYERS: {
+          MIN: 10000,
+          MAX: 50000,
+          BASE_RANGE: 20000
+        }
+      };
+    </script>
+    <script src="script.js"></script>
+
+    <footer
+  style="display: flex; justify-content: center; position: fixed; left: 0; right: 0; bottom: 0; z-index: 999; margin-bottom: 24px; background: none; pointer-events: none;"
+    >
+      <a
+        href="https://yakuzabet1.com/ref/1fwpccqfn"
+        id="footerRegisterBtn"
+        class="floating-btn register cta-button"
+        aria-label="สมัครสมาชิก (เปิดลิงก์ใหม่)"
+        role="button"
+        tabindex="0"
+        target="_blank"
+        rel="noopener"
+  style="background: linear-gradient(120deg,#ff9800 0%,#ffd700 40%,#fffbe6 100%); color: #fff; padding: 8px 18px; border-radius: 18px; margin-right: 12px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 24px #ffd700cc,0 0 0 4px #fffbe6; position: relative; overflow: hidden; pointer-events: auto; transition: box-shadow 0.2s, transform 0.2s; font-size:1em; border: 2px solid #fffbe6; backdrop-filter: blur(2px);"
+        data-event="SignUp"
+        data-role="cta"
+        data-name="register"
+        data-location="footer"
+        data-variant="gradient-gold"
+        data-destination="yakuzabet1.com"
+        ><span style="display:inline-flex;align-items:center;gap:7px;font-size:1em;position:relative;">
+          <svg width="19" height="19" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter:drop-shadow(0 0 7px #ffd700cc);">
+            <circle cx="11" cy="11" r="10" fill="#ffd700" stroke="#bfa100" stroke-width="2"/>
+            <ellipse cx="11" cy="9" rx="4.2" ry="3.2" fill="#fffbe6" opacity="0.7"/>
+            <circle cx="11" cy="8.2" r="2.6" fill="#fff" stroke="#bfa100" stroke-width="0.7"/>
+            <rect x="6.5" y="13.5" width="9" height="3.2" rx="1.6" fill="#fffbe6" stroke="#bfa100" stroke-width="0.7"/>
+            <rect x="15.2" y="6.2" width="1.8" height="0.7" rx="0.35" fill="#ffd700"/>
+            <rect x="16" y="5.4" width="0.7" height="1.8" rx="0.35" fill="#ffd700"/>
+          </svg>
+          <span class="label-gradient" style="font-weight:bold;letter-spacing:1px;text-shadow:0 2px 10px #fffbe6,0 0 2px #ffd700;">สมัครสมาชิก</span>
+        </span>
+        <span class="ripple"></span></a
+      >
+      <a
+        href="https://lin.ee/JpWODqE"
+        id="footerContactBtn"
+        class="floating-btn contact cta-button"
+        aria-label="ติดต่อแอดมิน (เปิดลิงก์ใหม่)"
+        role="button"
+        tabindex="0"
+        target="_blank"
+        rel="noopener"
+  style="background: linear-gradient(120deg,#43e97b 0%,#38f9d7 40%,#e0f7fa 100%); color: #fff; padding: 8px 18px; border-radius: 18px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 24px #38f9d7cc,0 0 0 4px #e0f7fa; position: relative; overflow: hidden; pointer-events: auto; transition: box-shadow 0.2s, transform 0.2s; font-size:1em; border: 2px solid #e0f7fa; backdrop-filter: blur(2px);"
+        data-event="Contact"
+        data-role="cta"
+        data-name="contact_admin"
+        data-location="footer"
+        data-variant="gradient-cyan"
+        data-destination="line"
+        ><span style="display:inline-flex;align-items:center;gap:7px;font-size:1em;position:relative;">
+          <svg width="19" height="19" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter:drop-shadow(0 0 7px #d500f9cc);">
+            <defs>
+              <radialGradient id="chatGradient" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#fce4ec"/>
+                <stop offset="70%" stop-color="#d500f9"/>
+                <stop offset="100%" stop-color="#f06292"/>
+              </radialGradient>
+            </defs>
+            <circle cx="11" cy="11" r="10" fill="url(#chatGradient)" stroke="#d500f9" stroke-width="2"/>
+            <rect x="5.5" y="7.5" width="11" height="6" rx="2.2" fill="#fce4ec" stroke="#d500f9" stroke-width="0.7"/>
+            <rect x="7.2" y="9.2" width="7.6" height="1.2" rx="0.6" fill="#d500f9"/>
+            <rect x="7.2" y="11" width="5.2" height="1.2" rx="0.6" fill="#f06292"/>
+            <polygon points="11,15.5 13.5,13.5 8.5,13.5" fill="#fce4ec" stroke="#d500f9" stroke-width="0.5"/>
+          </svg>
+          <span class="label-gradient" style="font-weight:bold;letter-spacing:1px;text-shadow:0 2px 10px #e0f7fa,0 0 2px #38f9d7;">ติดต่อแอดมิน</span>
+        </span>
+        <span class="ripple"></span></a
+      >
+    </footer>
+
+  <footer style="background: linear-gradient(90deg, rgba(0,4,255,0.3) 0%, rgba(0,191,255,0.3) 100%); color: #ffffff; padding: 16px; text-align: center; margin-top: 40px;">
+    <style>
+      .floating-btn.cta-button {
+        position: relative;
+        overflow: hidden;
+      }
+      .floating-btn.cta-button .ripple {
+        position: absolute;
+        border-radius: 50%;
+        transform: scale(0);
+        animation: ripple-anim 0.6s linear;
+        background: rgba(255,255,255,0.3);
+        pointer-events: none;
+        z-index: 2;
+      }
+      @keyframes ripple-anim {
+        to {
+          transform: scale(2.5);
+          opacity: 0;
+        }
+      }
+      .floating-btn.cta-button:hover,
+      .floating-btn.cta-button:focus {
+        box-shadow: 0 6px 32px #ffd700cc,0 0 0 6px #fffbe6;
+        filter: brightness(1.08);
+        animation: bounceBtn 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+      }
+      .floating-btn.contact.cta-button:hover,
+      .floating-btn.contact.cta-button:focus {
+        box-shadow: 0 6px 32px #38f9d7cc,0 0 0 6px #e0f7fa;
+      }
+      @keyframes bounceBtn {
+        0% { transform: scale(1) translateY(0); }
+        30% { transform: scale(1.12,0.92) translateY(-8px); }
+        50% { transform: scale(0.96,1.08) translateY(2px); }
+        70% { transform: scale(1.04,0.98) translateY(-4px); }
+        100% { transform: scale(1) translateY(0); }
+      }
+      /* animated gradient text label */
+      .floating-btn .label-gradient {
+        background: none;
+        color: #222 !important;
+        animation: none;
+      }
+      @keyframes textShift { from { background-position: 0% } to { background-position: 200% } }
+      .floating-btn.contact.cta-button:hover {
+        box-shadow: 0 6px 32px #38f9d7cc,0 0 0 6px #e0f7fa;
+      }
+      /* Subtle pulsing glow to make buttons feel alive */
+      .floating-btn.cta-button {
+        animation: pulseGlow 4.6s ease-in-out infinite;
+      }
+      @keyframes pulseGlow {
+        0% { box-shadow: 0 4px 18px rgba(0,0,0,0.12), 0 0 0 3px rgba(255,255,255,0.02); }
+        50% { box-shadow: 0 10px 36px rgba(0,0,0,0.18), 0 0 18px rgba(255,223,0,0.12); }
+        100% { box-shadow: 0 4px 18px rgba(0,0,0,0.12), 0 0 0 3px rgba(255,255,255,0.02); }
+      }
+      /* temporary class to force the sheen ::before sweep via JS */
+      .floating-btn.cta-button.sweep::before {
+        transform: translateX(300%);
+        opacity: 1;
+        transition: transform 0.9s ease, opacity 0.5s ease;
+      }
+      /* Animated conic border */
+      .floating-btn.cta-button::after {
+        content: '';
+        position: absolute;
+        inset: -2px;
+        border-radius: 20px;
+        padding: 2px;
+        background: conic-gradient(from 0deg, rgba(255,215,0,0.25), rgba(255,160,0,0.25), rgba(255,215,0,0.25));
+        z-index: 0;
+        filter: blur(6px);
+        opacity: 0.9;
+        pointer-events: none;
+        animation: conicSpin 10s linear infinite;
+      }
+      .floating-btn.cta-button > span { position: relative; z-index: 5; }
+      @keyframes conicSpin { to { transform: rotate(360deg); } }
+      /* tiny floating particles inside button (background) */
+      .floating-btn .particle { position: absolute; width:4px;height:4px;border-radius:50%;opacity:0.0;z-index:2;pointer-events:none; }
+      /* Sheen sweep */
+      .floating-btn.cta-button::before {
+        content: '';
+        position: absolute;
+        top: 0; left: -75%;
+        width: 40%; height: 100%;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0) 100%);
+        transform: skewX(-20deg) translateX(0);
+        transition: transform 0.9s ease, opacity 0.4s ease;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 3;
+      }
+      .floating-btn.cta-button:hover::before,
+      .floating-btn.cta-button:focus::before {
+        transform: translateX(300%);
+        opacity: 1;
+      }
+      /* Sparkles */
+      .floating-btn .sparkle {
+        position: absolute;
+        width: 6px; height: 6px; border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, #fff 0%, rgba(255,255,255,0.6) 40%, rgba(255,255,255,0) 60%);
+        box-shadow: 0 0 8px rgba(255,255,255,0.9), 0 0 12px rgba(255,223,0,0.6);
+        opacity: 0;
+        transform: scale(0);
+        animation: sparkle 900ms ease-out forwards;
+        z-index: 4;
+        pointer-events: none;
+      }
+      .floating-btn .star {
+        position: absolute; width:8px; height:8px; z-index:4; pointer-events:none; opacity:0; transform:scale(0) rotate(0deg);
+        background: linear-gradient(45deg,#fff,#ffe082); clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        filter: drop-shadow(0 0 6px rgba(255,223,0,0.6));
+        animation: starPop 1000ms ease-out forwards;
+      }
+      @keyframes starPop { 0%{ transform: scale(0) rotate(0); opacity:1 } 100%{ transform: scale(1.2) translateY(-18px) rotate(45deg); opacity:0 } }
+      /* Flare sweep */
+      .floating-btn .flare {
+        position: absolute; top: 0; left: -40%; width: 30%; height: 100%; pointer-events: none; z-index: 6;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0) 100%);
+        transform: skewX(-20deg) translateX(0); opacity: 0;
+      }
+      @keyframes flareSweep { 0% { transform: translateX(-120%); opacity:0 } 10%{ opacity:1 } 60% { transform: translateX(220%); opacity:0.9 } 100%{ transform: translateX(400%); opacity:0 } }
+      .floating-btn .flare.run { animation: flareSweep 900ms cubic-bezier(.2,.9,.2,1) forwards; }
+      @keyframes sparkle {
+        0% { transform: scale(0); opacity: 1; }
+        60% { transform: scale(1.2); opacity: 1; }
+        100% { transform: scale(1.6) translateY(-6px); opacity: 0; }
+      }
+      /* Focus visible */
+      .floating-btn.cta-button:focus {
+        outline: 3px solid rgba(255,255,255,0.14);
+        box-shadow: 0 8px 40px rgba(0,0,0,0.25), 0 0 0 6px rgba(255,255,255,0.06);
+        transform: translateY(-2px) scale(1.03);
+      }
+    </style>
+    <script>
+      document.querySelectorAll('.floating-btn.cta-button').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          const ripple = document.createElement('span');
+          ripple.className = 'ripple';
+          const rect = btn.getBoundingClientRect();
+          ripple.style.left = (e.clientX - rect.left) + 'px';
+          ripple.style.top = (e.clientY - rect.top) + 'px';
+          ripple.style.width = ripple.style.height = Math.max(rect.width, rect.height) + 'px';
+          btn.appendChild(ripple);
+          ripple.addEventListener('animationend', () => ripple.remove());
+        });
+        // sparkle on hover/focus
+        btn.addEventListener('mouseenter', function(e) {
+          createSparkles(btn, 7);
+        });
+        btn.addEventListener('focus', function(e) {
+          createSparkles(btn, 5);
+        });
+      });
+      // confetti on click
+      document.querySelectorAll('.floating-btn.cta-button').forEach(btn => {
+        btn.addEventListener('click', function(e){
+          createConfetti(btn, 12);
+        });
+      });
+
+      function createConfetti(btn, n) {
+        const rect = btn.getBoundingClientRect();
+        for (let i=0;i<n;i++){
+          const c = document.createElement('span');
+          c.className = 'sparkle';
+          c.style.width = c.style.height = (4 + Math.random()*6) + 'px';
+          c.style.left = (Math.random() * rect.width) + 'px';
+          c.style.top = (Math.random() * rect.height) + 'px';
+          c.style.background = ['#fff','#ffd700','#ff6f61','#38f9d7'][Math.floor(Math.random()*4)];
+          btn.appendChild(c);
+          c.animate([
+            { transform: 'translateY(0) scale(1)', opacity: 1 },
+            { transform: `translateY(${ -40 - Math.random()*40 }px) translateX(${ -30 + Math.random()*60 }px) rotate(${Math.random()*720}deg) scale(0.6)`, opacity: 0 }
+          ], { duration: 900 + Math.random()*700, easing: 'cubic-bezier(.2,.8,.2,1)' }).onfinish = () => c.remove();
+        }
+      }
+
+      function createSparkles(btn, count) {
+        const rect = btn.getBoundingClientRect();
+        for (let i = 0; i < count; i++) {
+          const s = document.createElement('span');
+          s.className = 'sparkle';
+          const x = Math.random() * (rect.width - 8) + 4;
+          const y = Math.random() * (rect.height - 8) + 4;
+          s.style.left = x + 'px';
+          s.style.top = y + 'px';
+          s.style.width = s.style.height = (Math.random() * 6 + 4) + 'px';
+          btn.appendChild(s);
+          s.addEventListener('animationend', () => s.remove());
+        }
+      }
+
+      // Periodically trigger small sparkles and a sheen sweep for each button
+      document.querySelectorAll('.floating-btn.cta-button').forEach(btn => {
+        // randomized repeating timer
+        const schedule = () => {
+          const delay = 2500 + Math.random() * 4500; // 2.5s - 7s
+          setTimeout(() => {
+            // create a light sparkle burst
+            createSparkles(btn, 3 + Math.floor(Math.random() * 4));
+            // trigger sheen sweep
+            btn.classList.add('sweep');
+            setTimeout(() => btn.classList.remove('sweep'), 1100);
+            schedule();
+          }, delay);
+        };
+        schedule();
+      });
+
+      // tilt on pointer move
+      document.querySelectorAll('.floating-btn.cta-button').forEach(btn => {
+        btn.addEventListener('pointermove', function(e){
+          if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+          const rect = btn.getBoundingClientRect();
+          const cx = rect.left + rect.width/2;
+          const cy = rect.top + rect.height/2;
+          const dx = (e.clientX - cx) / rect.width;
+          const dy = (e.clientY - cy) / rect.height;
+          btn.style.transform = `perspective(600px) rotateX(${ -dy * 6 }deg) rotateY(${ dx * 8 }deg) translateZ(1px)`;
+        });
+        btn.addEventListener('pointerleave', function(){ btn.style.transform = ''; });
+      });
+
+      // occasional star bursts
+      setInterval(()=>{
+        document.querySelectorAll('.floating-btn.cta-button').forEach(btn => {
+          const rect = btn.getBoundingClientRect();
+          const s = document.createElement('span');
+          s.className = 'star';
+          s.style.left = (Math.random()*(rect.width-10)+4) + 'px';
+          s.style.top = (Math.random()*(rect.height-10)+4) + 'px';
+          btn.appendChild(s);
+          s.addEventListener('animationend', () => s.remove());
+        });
+      }, 2700 + Math.random()*2300);
+
+      // flare sweep on hover/focus
+      document.querySelectorAll('.floating-btn.cta-button').forEach(btn => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        btn.addEventListener('pointerenter', () => runFlare(btn));
+        btn.addEventListener('focus', () => runFlare(btn));
+      });
+
+      function runFlare(btn) {
+        const f = document.createElement('span');
+        f.className = 'flare';
+        btn.appendChild(f);
+        // force reflow then add class
+        void f.offsetWidth;
+        f.classList.add('run');
+        f.addEventListener('animationend', () => f.remove());
+      }
+
+      // small continuous particles generator (gentle)
+      function startParticles() {
+        document.querySelectorAll('.floating-btn.cta-button').forEach(btn => {
+          setInterval(() => {
+            const p = document.createElement('span');
+            p.className = 'particle';
+            p.style.background = 'radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.4) 40%, rgba(255,255,255,0) 60%)';
+            const rect = btn.getBoundingClientRect();
+            const x = Math.random() * (rect.width - 6) + 2;
+            const y = Math.random() * (rect.height - 6) + 2;
+            p.style.left = x + 'px';
+            p.style.top = y + 'px';
+            btn.appendChild(p);
+            // animate float up and fade
+            p.animate([
+              { transform: 'translateY(0px)', opacity: 0.9 },
+              { transform: 'translateY(-8px)', opacity: 0 }
+            ], { duration: 1200 + Math.random()*800, easing: 'ease-out' }).onfinish = () => p.remove();
+          }, 1200 + Math.random()*1800);
+        });
+      }
+      startParticles();
+    </script>
+      <p>&copy; 2024 บริษัทของคุณ. สงวนลิขสิทธิ์.</p>
+    </footer>
+
+    <script>
+      (function () {
+        if (window.__ctaBoundFbOnly__) return;
+        window.__ctaBoundFbOnly__ = true;
+
+        const STANDARD_EVENTS = new Set([
+          "ViewContent","Search","AddToCart","AddToWishlist","InitiateCheckout",
+          "AddPaymentInfo","Purchase","Lead","CompleteRegistration","Subscribe",
+          "Contact","CustomizeProduct","Donate","FindLocation","Schedule",
+          "StartTrial","SubmitApplication","SignUp"
+        ]);
+
+        function genId() {
+          return (typeof crypto !== "undefined" && crypto.randomUUID)
+            ? crypto.randomUUID()
+            : "clk-" + Date.now() + "-" + Math.random().toString(36).slice(2,7);
+        }
+
+        function safeUrl(raw) {
+          try {
+            const u = new URL(raw, location.origin);
+            return u.origin + u.pathname; // ตัด query/hash ลดความเสี่ยง PII
+          } catch {
+            return raw || null;
+          }
+        }
+
+        function getCtx(el) {
+          const ds = el.dataset || {};
+          const anchor = el.closest("a[href]");
+          const href = anchor ? anchor.href : null;
+          const action = ds.name || ds.role || "cta";
+          const label = (ds.label || el.textContent || "").trim().slice(0, 120);
+          const event = ds.event || `click_${action}`;
+          return {
+            action,
+            label,
+            dest_url: ds.destination || href,
+            safe_dest_url: safeUrl(ds.destination || href),
+            location: ds.location || null,
+            variant: ds.variant || null,
+            device: (matchMedia("(max-width: 767px)").matches ? "mobile" : "desktop"),
+            event,
+            id: genId()
+          };
+        }
+
+        document.addEventListener("click", function (e) {
+          const el = e.target.closest(".cta-button");
+          if (!el) return;
+          const ctx = getCtx(el);
+
+          // เก็บข้อมูลการกดปุ่ม
+          if (window.CustomerAnalytics) {
+            CustomerAnalytics.trackButtonClick({
+              button_id: el.id || 'unknown',
+              button_text: ctx.label,
+              action: ctx.action,
+              location: ctx.location
+            });
+          }
+
+          if (typeof fbq === "function") {
+            const fbParams = {
+              action: ctx.action,
+              button_text: ctx.label,
+              dest_url: ctx.safe_dest_url,
+              location: ctx.location,
+              variant: ctx.variant,
+              device: ctx.device,
+              page_path: location.pathname,
+              session_id: JSON.parse(sessionStorage.getItem('visitor_data') || '{}').sessionId,
+              click_timestamp: new Date().toISOString()
+            };
+            
+            if (STANDARD_EVENTS.has(ctx.event)) {
+              fbq("track", ctx.event, fbParams, { eventID: ctx.id });
+            } else {
+              fbq("trackCustom", ctx.event, fbParams, { eventID: ctx.id });
+            }
+            
+            // ส่งข้อมูลเพิ่มเติมสำหรับ Facebook Ads optimization
+            fbq('trackCustom', 'ButtonInteraction', {
+              button_type: ctx.action,
+              button_position: ctx.location,
+              user_intent: ctx.action === 'register' ? 'high_intent' : 'medium_intent',
+              interaction_quality: 'engaged_user'
+            });
+          }
+
+          const a = el.closest("a[href]");
+          if (a && a.target !== "_blank") {
+            e.preventDefault();
+            setTimeout(() => { location.href = a.href; }, 200);
+          }
+        }, true);
+      })();
+
+      // ติดตามเวลาที่อยู่ในหน้า
+      (function() {
+        let startTime = Date.now();
+        let maxScroll = 0;
+        
+        // ติดตามการ scroll
+        window.addEventListener('scroll', function() {
+          const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+          maxScroll = Math.max(maxScroll, scrollPercent);
+        });
+        
+        // วิเคราะห์ความสนใจแบบเรียลไทม์
+        let engagementScore = 0;
+        let warningShown = false;
+        
+        function updateEngagementScore() {
+          const timeOnPage = Math.round((Date.now() - startTime) / 1000);
+          const clicksCount = JSON.parse(localStorage.getItem('button_clicks') || '[]').length;
+          
+          // คำนวณคะแนนความสนใจ
+          engagementScore = 
+            (timeOnPage > 30 ? 20 : timeOnPage * 0.67) +  // เวลาที่อยู่
+            (maxScroll > 50 ? 20 : maxScroll * 0.4) +     // การเลื่อน
+            (clicksCount * 30);                           // การกดปุ่ม
+          
+          // แสดงคำเตือนถ้าลูกค้าสนใจมาก แต่ยังไม่สมัคร
+          if (engagementScore > 60 && !warningShown && clicksCount === 0) {
+            console.log('🔥 === ลูกค้าสนใจสูง! ===');
+            console.log('⭐ คะแนนความสนใจ:', Math.round(engagementScore), '/ 100');
+            console.log('⏰ อยู่ในเว็บ:', timeOnPage, 'วินาที');
+            console.log('📜 เลื่อนดูแล้ว:', maxScroll, '%');
+            console.log('💡 แนะนำ: ลูกค้าคนนี้น่าจะสนใจ อาจต้องการการติดต่อ!');
+            warningShown = true;
+          }
+          
+          return engagementScore;
+        }
+        
+        // เช็คความสนใจทุก 10 วินาที
+        setInterval(updateEngagementScore, 10000);
+        
+        // เก็บข้อมูลเมื่อออกจากหน้า
+        window.addEventListener('beforeunload', function() {
+          try {
+            const timeOnPage = Math.round((Date.now() - startTime) / 1000);
+            const finalScore = updateEngagementScore();
+            
+            const engagementData = {
+              time_on_page: timeOnPage,
+              max_scroll_percent: maxScroll,
+              clicks_count: JSON.parse(localStorage.getItem('button_clicks') || '[]').length,
+              engagement_score: Math.round(finalScore),
+              timestamp: new Date().toISOString()
+            };
+            
+            // บันทึกลูกค้าที่มีแนวโน้มสูง
+            if (finalScore > 50) {
+              const hotLeads = JSON.parse(localStorage.getItem('hot_leads') || '[]');
+              hotLeads.push(engagementData);
+              localStorage.setItem('hot_leads', JSON.stringify(hotLeads.slice(-20))); // เก็บ 20 คนล่าสุด
+            }
+            
+            // ส่งข้อมูลผ่าน Facebook Pixel
+            if (typeof fbq === 'function' && timeOnPage > 5) {
+              fbq('trackCustom', 'Engagement', engagementData);
+              
+              // ส่งข้อมูลคุณภาพผู้เข้าชม
+              const qualityLevel = finalScore > 80 ? 'high_quality' : 
+                                 finalScore > 50 ? 'medium_quality' : 'low_quality';
+              
+              fbq('trackCustom', 'UserQuality', {
+                quality_score: Math.round(finalScore),
+                quality_level: qualityLevel,
+                time_spent: timeOnPage,
+                scroll_depth: maxScroll,
+                interaction_count: engagementData.clicks_count,
+                is_hot_lead: finalScore > 50
+              });
+              
+              // ส่งข้อมูล Lead Scoring สำหรับ Facebook Lead Ads
+              if (finalScore > 60 && engagementData.clicks_count === 0) {
+                fbq('trackCustom', 'HighIntentLead', {
+                  lead_score: Math.round(finalScore),
+                  reason: 'high_engagement_no_action',
+                  recommendation: 'retarget_candidate'
+                });
+              }
+            }
+          } catch(e) {}
+        });
+        
+        // เพิ่มคำสั่งดูลูกค้าที่สนใจสูง
+        window.showHotLeads = () => {
+          const leads = JSON.parse(localStorage.getItem('hot_leads') || '[]');
+          console.log('🔥 === ลูกค้าที่สนใจสูง ===');
+          console.log('จำนวน:', leads.length, 'คน');
+          leads.forEach((lead, i) => {
+            console.log(`${i+1}. คะแนน: ${lead.engagement_score}, เวลา: ${lead.time_on_page}วิ, เลื่อน: ${lead.max_scroll_percent}%, กด: ${lead.clicks_count}ครั้ง`);
+          });
+          return leads;
+        };
+      })();
+    </script>
+  </body>
+</html>

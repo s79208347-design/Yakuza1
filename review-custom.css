@@ -1,0 +1,10 @@
+/* ปรับ margin-top ของ .review-withdraw-row ให้เลื่อนกล่องรีวิวลงมา */
+.review-withdraw-row {
+  margin-top: 48px !important;
+}
+
+@media (max-width: 600px) {
+  .review-withdraw-row {
+    margin-top: 12px !important;
+  }
+}
