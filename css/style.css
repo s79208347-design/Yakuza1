@@ -1,0 +1,509 @@
+* {
+margin: 0; /* ลบระยะห่างรอบนอก */
+padding: 0; /* ลบระยะห่างภายใน */
+box-sizing: border-box;  /* รวมขนาดเส้นขอบและระยะห่างภายในในขนาดองค์ประกอบ */
+}
+
+body {
+background-image: url('../images/01.jpg');  /* ตั้งค่าภาพพื้นหลัง */
+background-size: cover;  /* ปรับขนาดภาพให้เต็มพื้นที่ */
+background-position: center;  /* จัดตำแหน่งภาพตรงกลาง */
+}
+
+nav {
+display: flex;  /* ใช้ Flexbox สำหรับจัดวางเนื้อหา */
+align-items: center;  /* จัดกึ่งกลางในแนวตั้ง */
+background-color: rgba(16, 4, 158, 0.555);  /* สีพื้นหลังโปร่งแสง */
+width: 100%;  /* ความกว้างเต็ม */
+height: 60px;  /* ความสูงของแถบนำทาง */
+top: 0;
+z-index: 1000;  /* วางอยู่ด้านบน */
+}
+
+nav img {
+height: 80px;  /* ความสูงของภาพ */
+width: 80px;  /* ความกว้างของภาพ */
+margin-left: 10px;  /* ระยะห่างด้านซ้าย */
+object-fit: contain;  /* ปรับขนาดภาพให้พอดีกับกรอบ */
+cursor: pointer;  /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+transition: transform 0.3s;  /* เพิ่มการเปลี่ยนแปลงเมื่อชี้ */
+animation: alternateGlow 3s infinite alternate; /* แอนิเมชันเรืองแสง */
+}
+
+nav img:hover {
+transform: scale(1.1);  /* ขยายภาพเมื่อชี้ */
+}
+@keyframes alternateGlow {
+0% {
+filter: drop-shadow(0 0 8px rgb(0, 204, 255));   /* เงาสีฟ้าอ่อน */
+}
+20% {
+filter: drop-shadow(0 0 8px rgb(255, 0, 0));   /* เงาสีแดง */
+}
+40% {
+filter: drop-shadow(0 0 8px rgb(0, 255, 0));   /* เงาสีเขียว */
+}
+60% {
+filter: drop-shadow(0 0 8px rgb(255, 255, 255));   /* เงาสีขาว */
+}
+80% {
+filter: drop-shadow(0 0 8px rgb(255, 0, 255));   /* เงาสีม่วง */
+}
+100% {      
+filter: drop-shadow(0 0 8px rgb(212, 255, 0));   /* เงาสีฟ้าอ่อน */
+}
+}
+
+.สไลด์โชว์ {
+display: block;  /* แสดงเป็นบล็อก */
+margin: auto;  /* จัดกึ่งกลาง */
+width: 380px;  /* ความกว้างเต็ม */
+height: 200px;  /* ความสูงของสไลด์โชว์ */
+position: relative;  /* ตำแหน่งสัมพัทธ์ */
+border-radius: 15px;  /* มุมโค้งมน */
+margin-top: 20px;  /* ระยะห่างด้านบน */
+margin-bottom: 20px;  /* ระยะห่างด้านล่าง */
+overflow: hidden;  /* ซ่อนส่วนที่เกิน */
+}
+
+#สไลด์โชว์ img {
+   width: 380px;  /* ความกว้างเต็ม */
+   height: 180px;  /* ความสูงของสไลด์โชว์ */
+   border-radius: 15px;  /* มุมโค้งมน */
+   border: 2px solid #00ff08;  /* สีขอบภาพ */
+   animation: slide-animation 5s ease-in-out infinite; /* แอนิเมชันสไลด์ */
+}
+
+@keyframes slide-animation {
+0% { opacity: 0; transform: translateX(100%); }
+15% { opacity: 1; transform: translateX(0); }
+85% { opacity: 1; transform: translateX(0); }
+100% { opacity: 0; transform: translateX(-100%); }
+}
+
+#สมัครสมาชิก {
+display: block;  /* แสดงเป็นบล็อก */
+margin: auto;  /* จัดกึ่งกลาง */
+font-size: 18px;  /* ขนาดตัวอักษร */
+width: 300px;    /* ความกว้างปุ่ม */
+height: 50px;   /* ความสูงปุ่ม */
+color: #fff;     /* สีตัวอักษร */
+position: relative;   /* ตำแหน่งสัมพัทธ์ */                  
+z-index: 0; /* ตั้งค่า z-index */
+border-radius: 10px;        /* มุมโค้งมน */
+}
+
+#สมัครสมาชิก:before {
+content: '';            /* เนื้อหาว่าง */
+background: linear-gradient(        /* สีรุ้งไล่ระดับ */
+45deg,
+#ff0000, #ff7300, #fffb00, #48ff00,
+#00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000
+);
+position: absolute;   /* ตำแหน่งสัมพัทธ์ */
+top: -5px;        /* ระยะห่างด้านบน */
+left: -5px;     /* ระยะห่างด้านซ้าย */
+background-size: 400%;          /* ขนาดพื้นหลัง */
+z-index: -1;    /* วางไว้ด้านหลัง */   
+filter: blur(5px);  /* เบลอพื้นหลัง */ 
+width: calc(100% + 10px);        /* ความกว้างเพิ่มขึ้นเล็กน้อย */
+height: calc(100% + 10px);   /* ความสูงเพิ่มขึ้นเล็กน้อย */ 
+animation: glowing 20s linear infinite; /* แอนิเมชันเรืองแสง */
+opacity: 1; /* ✅ แสดงตลอด */       
+transition: opacity .3s ease-in-out;        /* การเปลี่ยนแปลงความทึบแสง */
+border-radius: 10px;        /* มุมโค้งมน */
+}
+
+#สมัครสมาชิก:active {
+color: #000;        /* เปลี่ยนสีตัวอักษรเมื่อกด */
+}
+
+#สมัครสมาชิก:active:after {
+background: transparent;        /* เปลี่ยนพื้นหลังเป็นโปร่งใสเมื่อกด */
+}
+
+#สมัครสมาชิก:after {
+z-index: -1; /* วางไว้ด้านหลัง */  
+content: '';        /* เนื้อหาว่าง */
+position: absolute;       /* ตำแหน่งสัมพัทธ์ */
+width: 100%;        /* ความกว้างเต็ม */
+height: 100%;       /* ความสูงเต็ม */ 
+background: #0e0654;    /* สีพื้นหลังปุ่ม */
+left: 0;        /* ระยะห่างด้านซ้าย */
+top: 0;       /* ระยะห่างด้านบน */
+border-radius: 10px;    /* มุมโค้งมน */
+}
+
+@keyframes glowing {
+0%   { background-position: 0 0; }      /* ตำแหน่งพื้นหลังเริ่มต้น */
+50%  { background-position: 400% 0; }       /* ตำแหน่งพื้นหลังกลาง */
+100% { background-position: 0 0; }    /* ตำแหน่งพื้นหลังสิ้นสุด */
+}
+
+#แอดไลน์ {
+display: block;  /* แสดงเป็นบล็อก */
+margin: auto;  /* จัดกึ่งกลาง */
+width: 305px;   /* ความกว้างปุ่ม */
+position: relative;  /* ตำแหน่งสัมพัทธ์ */
+margin-top: 20px;  /* ระยะห่างด้านบน */
+padding: 14px 8px;   /* ระยะห่างภายในปุ่ม */
+background: linear-gradient(145deg, #0f0f0f, #1c1c1c);  /* สีพื้นหลังไล่ระดับ */
+border: 2px solid rgba(255, 255, 255, 0.2);  /* ขอบโปร่งแสง */
+border-radius: 10px;   /* มุมโค้งมน */
+color: #fff;   /* สีตัวอักษร */      
+font-size: 20px;   /* ขนาดตัวอักษร */
+overflow: hidden;         /* ซ่อนส่วนที่เกิน */
+transition: all 0.4s ease-in-out;         /* การเปลี่ยนแปลงทั้งหมด */
+z-index: 1;       /* ตั้งค่า z-index */
+margin-bottom: 30px; /* ระยะห่างด้านล่าง */
+}
+
+#แอดไลน์::before { 
+content: "";      /* เนื้อหาว่าง */
+position: absolute;  /* ตำแหน่งสัมพัทธ์ */
+top: -50%;         /* ระยะห่างด้านบน */
+left: -50%;    /* ระยะห่างด้านซ้าย */
+width: 200%;        /* ความกว้างเพิ่มขึ้น */
+height: 2000%;         /* ความสูงเพิ่มขึ้น */
+background: conic-gradient(from 0deg, #00ffff, #ff0000, #ea00ff);   /* สีรุ้งแบบวงกลม */
+animation: rotate 4s linear infinite;         /* แอนิเมชันหมุน */
+z-index: -2;          /* วางไว้ด้านหลัง */
+}
+
+#แอดไลน์::after {
+content: "";      /* เนื้อหาว่าง */
+position: absolute;  /* ตำแหน่งสัมพัทธ์ */
+inset: 2px;      /* ระยะห่างรอบด้าน */
+background: #0a0a0a;   /* สีพื้นหลังปุ่ม */
+border-radius: inherit;       /* มุมโค้งมนเหมือนปุ่ม */
+z-index: -1;      /* วางไว้ด้านหลัง */
+}
+
+#แอดไลน์:hover {
+transform: scale(1.05);       /* ขยายปุ่มเมื่อชี้ */
+box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);         /* เงาเข้มขึ้นเมื่อชี้ */
+}         
+
+#แอดไลน์:hover .ลูกศร { 
+transform: translateX(6px);    /* เลื่อนลูกศรเมื่อชี้ */
+}
+
+@keyframes rotate {      /* แอนิเมชันหมุน */
+0% {
+transform: rotate(0deg);      /* หมุนเริ่มต้น */
+}
+100% {
+transform: rotate(360deg);    /* หมุนครบ 360 องศา */
+}
+}
+
+.จำนวนผู้เล่น {
+display: block; /* แสดงเป็นบล็อก */
+margin: auto; /* จัดกึ่งกลาง */
+background-color: #000000ab; /* สีพื้นหลังโปร่งแสง */
+padding: 10px 20px; /* ระยะห่างภายใน */
+border-radius: 10px; /* มุมโค้งของกล่อง */
+width: 380px; /* ความกว้างสูงสุด */
+height: 100px; /* ความสูงอัตโนมัติ */
+border: 2px solid #00ff11;  /* ขอบสีเขียว */
+filter: drop-shadow(0 0 8px rgba(0, 204, 255, 0.5)); /* เงาของกล่อง */
+font-family: "Prompt", sans-serif; /* กำหนดฟอนต์ */
+position: relative; /* ตำแหน่งสัมพัทธ์ */
+margin-bottom: 30px; /* ระยะห่างด้านล่าง */
+}
+
+.จำนวนผู้เล่น  h2 {
+margin-bottom: 30px; /* ระยะห่างด้านล่างของหัวข้อ */
+font-size: 25px; /* ขนาดตัวอักษรของหัวข้อ */
+font-weight: bold; /* ตัวหนาของหัวข้อ */
+text-align: center;  /* จัดกึ่งกลางข้อความ */
+color: #ffffff;   /* สีข้อความ */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* เงาของข้อความ */
+}
+
+#จำนวนผู้เล่น {
+font-size: 27px; /* ขนาดตัวอักษร */
+position: relative; /* ตำแหน่งสัมพัทธ์ */
+top: -20px; /* ระยะห่างด้านบน */
+color: #00ff11; /* สีข้อความ */
+text-align: center; /* จัดกึ่งกลางข้อความ */
+font-weight: bold; /* ตัวหนาของข้อความ */
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* เงาของข้อความ */
+}
+
+.รีวิว {
+margin: 40px auto; /* กึ่งกลางในแนวนอนและระยะห่างด้านบน */
+width: 380px; /* ความกว้างเต็ม */
+height: auto; /* ความสูงอัตโนมัติ */
+background: rgba(0, 0, 0, 0.5); /* สีพื้นหลังโปร่งแสง */
+border-radius: 15px; /* มุมโค้งของกล่องรีวิว */
+overflow: hidden; /* ซ่อนส่วนที่เกิน */
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* เงาของกล่องรีวิว */
+font-family: "Prompt", sans-serif; /* กำหนดฟอนต์ */
+border: 2px solid #00ff11;  /* ขอบสีเขียว */
+filter: drop-shadow(0 0 8px rgba(0, 204, 255, 0.5)); /* เงาของกล่องรีวิว */
+margin-top: 5px; /* ระยะห่างด้านบน */
+margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+
+.รีวิว h2 {
+font-size: 28px; /* ขนาดตัวอักษรของหัวข้อรีวิว */
+margin-top: 20px; /* ระยะห่างด้านบนของหัวข้อรีวิว */
+font-weight: bold; /* ตัวหนาของหัวข้อรีวิว */
+text-align: center;  /* จัดกึ่งกลางข้อความ */
+color: #ffffff;   /* สีข้อความ */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* เงาของข้อความ */
+}
+
+/* กล่องรีวิวรวม */
+#รีวิวข้อความ {
+display: flex;    /* ใช้ Flexbox สำหรับจัดวางรายการรีวิว */
+flex-direction: column;   /* จัดเรียงรายการรีวิวในแนวตั้ง */
+gap: 14px;    /* ระยะห่างระหว่างรายการรีวิว */
+padding: 20px;       /* ระยะห่างภายในกล่องรีวิวรวม */
+border-radius: 10px;      /* มุมโค้งของกล่องรีวิวรวม */
+}
+
+/* รายการรีวิวแต่ละอัน */
+.รีวิว-item {     /* รายการรีวิวแต่ละอัน */
+display: flex;    /* ใช้ Flexbox สำหรับจัดวางเนื้อหา */
+align-items: flex-start;  /* จัดชิดด้านบน */ 
+gap: 10px;        /* ระยะห่างระหว่างรูปกับข้อความ */
+position: relative;       /* ตั้งตำแหน่งแบบสัมพัทธ์ */
+}
+
+/* รูปโปรไฟล์ */
+.รีวิว-item img {         /* รูปโปรไฟล์ */
+width: 46px;              /* ขนาดรูปโปรไฟล์ */
+height: 46px;     /* ขนาดรูปโปรไฟล์ */
+border-radius: 50%;           /* ทำให้รูปเป็นวงกลม */
+object-fit: cover;        /* ครอบตัดรูปให้พอดี */
+flex-shrink: 0;       /* ไม่ย่อขนาดรูปโปรไฟล์ */
+border: 2px solid #00ff11;  /* ขอบสีเขียว */
+filter: drop-shadow(0 0 8px rgba(0, 204, 255, 0.5)); /* เงาของรูปโปรไฟล์ */
+}
+
+/* กล่องข้อความรีวิว */
+.รีวิว-content {
+background: #ffffff;  /* สีครีมอ่อนตามภาพตัวอย่าง */
+color: #044fff;           /* สีข้อความ */
+padding: 10px 14px;       /* ระยะห่างภายในกล่องข้อความรีวิว */
+border-radius: 18px;          /* มุมโค้งของกล่องข้อความรีวิว */
+max-width: 75%;               /* กำหนดความกว้างสูงสุด */
+position: relative;           /* ตั้งตำแหน่งแบบสัมพัทธ์ */
+}
+
+/* ลูกศรชี้ไปทางรูป (ทางซ้าย) */
+.รีวิว-content::before {          /* สร้างลูกศร */
+content: "";          /* เนื้อหาว่าง */
+position: absolute;    /* ตั้งตำแหน่งแบบสัมพัทธ์ */
+left: -8px;    /* ตำแหน่งด้านซ้ายของลูกศร */
+top: 16px;   /* ตำแหน่งด้านบนของลูกศร */
+width: 0;    /* ไม่กำหนดขนาด */
+height: 0;    /* ไม่กำหนดขนาด */
+border-top: 7px solid transparent;   /* ความกว้างของลูกศร */
+border-bottom: 7px solid transparent;  /* ความสูงของลูกศร */
+border-right: 8px solid #fdebd0; /* สีเดียวกับกล่องรีวิว */
+}
+
+/* เว้นฝั่งขวาสำหรับรีวิวที่สลับข้าง */
+.รีวิว-item:nth-child(even) {    /* รายการรีวิวที่ 2, 4, 6,... */
+flex-direction: row-reverse;   /* สลับตำแหน่งรูปกับข้อความ */
+}
+
+.รีวิว-item:nth-child(even) .รีวิว-content {   /* กล่องข้อความรีวิวฝั่งขวา */
+background: #dcfce7;  /* สีฟ้าอ่อนตามภาพตัวอย่าง */
+}
+
+.รีวิว-item:nth-child(even) .รีวิว-content::before {
+left: auto;   /* ยกเลิกการตั้งค่าตำแหน่งซ้าย */
+right: -8px;   /* เปลี่ยนตำแหน่งลูกศรไปทางขวา */
+border-right: none;   /* ลบขอบขวา */
+border-left: 8px solid #ffffff; /* สีเดียวกับบับเบิลฝั่งขวา */
+}
+
+/* ชื่อกับข้อความ */
+.รีวิว-content h4 {
+margin: 0;   /* ลบระยะห่างรอบหัวข้อ */
+font-size: 14px;    /* ขนาดตัวอักษรหัวข้อ */
+font-weight: 600;  /* ความหนาของตัวอักษรหัวข้อ */
+}
+
+.รีวิว-content p {
+margin: 3px 0 0;   /* ระยะห่างด้านบนของย่อหน้าข้อความ */
+font-size: 13px;    /* ขนาดตัวอักษรข้อความ */
+line-height: 1.4;   /* ระยะห่างระหว่างบรรทัดข้อความ */
+}
+
+.รายการถอนเงิน {
+width: 100%; /* ความกว้างเต็ม */
+max-width: 380px; /* ความกว้างสูงสุด */
+height: 320px; /* ความสูงอัตโนมัติ */
+margin: 20px auto; /* กึ่งกลางในแนวนอนและระยะห่างด้านบน */
+padding: 20px; /* ระยะห่างภายใน */
+background: rgba(0, 0, 0, 0.5); /* สีพื้นหลังโปร่งแสง */
+border-radius: 15px; /* มุมโค้งของกล่อง */
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* เงาของกล่อง */
+border: 2px solid #00ff11;  /* ขอบสีเขียว */
+filter: drop-shadow(0 0 8px rgba(0, 204, 255, 0.5)); /* เงาของกล่อง */
+font-family: "Prompt", sans-serif; /* กำหนดฟอนต์ */
+}
+
+.รายการถอนเงิน h2 {
+margin-bottom: 10px; /* ระยะห่างด้านล่างของหัวข้อ */
+font-size: 28px; /* ขนาดตัวอักษรของหัวข้อ */
+font-weight: bold; /* ตัวหนาของหัวข้อ */
+text-align: center;  /* จัดกึ่งกลางข้อความ */
+color: #ffffff;   /* สีข้อความ */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* เงาของข้อความ */
+}
+
+.รายการถอนเงิน-item {
+max-height: 280px; /* ความสูงสูงสุดของรายการ */
+overflow-y: auto; /* แสดงแถบเลื่อนแนวตั้งเมื่อเนื้อหาเกิน */
+padding-right: 10px; /* ระยะห่างด้านขวา */
+scrollbar-width: thin; /* ขนาดของแถบเลื่อน */
+scrollbar-color: #00ff11 transparent; /* สีของแถบเลื่อน */
+background-color: #fff; /* สีพื้นหลังของรายการ */
+border-radius: 10px; /* มุมโค้งของรายการ */
+display: flex; /* ใช้ Flexbox สำหรับจัดวางเนื้อหา */
+align-items: center; /* จัดกึ่งกลางในแนวตั้ง */
+gap: 10px; /* ระยะห่างระหว่างรูปกับข้อความ */
+padding: 10px; /* ระยะห่างภายในรายการ */
+margin-bottom: 10px; /* ระยะห่างด้านล่างของรายการ */
+margin-top: 20px; /* ระยะห่างด้านบนของรายการ */
+}
+
+.รายการถอนเงิน-item img {
+width: 40px; /* ขนาดรูปโปรไฟล์ */
+height: 40px; /* ขนาดรูปโปรไฟล์ */
+border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
+object-fit: cover; /* ครอบตัดรูปให้พอดี */
+border: 2px solid #00ff11;  /* ขอบสีเขียว */
+position: relative; /* ตำแหน่งสัมพัทธ์ */
+}
+
+.รายการถอนเงิน-content h4 {
+margin: 0; /* ลบระยะห่างรอบหัวข้อ */
+font-size: 14px; /* ขนาดตัวอักษรหัวข้อ */
+font-weight: 600; /* ความหนาของตัวอักษรหัวข้อ */
+color: #000000; /* สีข้อความ */
+}
+
+.รายการถอนเงิน-content p {
+margin: 0; /* ลบระยะห่างรอบข้อความ */
+font-size: 12px; /* ขนาดตัวอักษรข้อความ */
+line-height: 1.4; /* ระยะห่างระหว่างบรรทัดข้อความ */
+color: #000000; /* สีข้อความ */
+}
+
+.เกมยอดนิยม {
+   display: block;  /* แสดงเป็นบล็อก */
+   margin: auto;  /* จัดกึ่งกลาง */
+   background-color: #000000ab; /* สีพื้นหลังโปร่งแสง */
+   border-radius: 10px; /* มุมโค้งของกล่อง */
+   width: 380px; /* ความกว้างสูงสุด */
+   height: 350px; /* ความสูงอัตโนมัติ */
+   border: 2px solid #00ff11;  /* ขอบสีเขียว */
+   filter: drop-shadow(0 0 8px rgba(0, 204, 255, 0.5)); /* เงาของกล่อง */
+   font-family: "Prompt", sans-serif; /* กำหนดฟอนต์ */
+   position: relative; /* ตำแหน่งสัมพัทธ์ */
+   margin-bottom: 30px; /* ระยะห่างด้านล่าง */
+}
+
+.เกมยอดนิยม h2 {
+margin-bottom: 10px; /* ระยะห่างด้านล่างของหัวข้อ */
+font-size: 28px; /* ขนาดตัวอักษรของหัวข้อ */
+font-weight: bold; /* ตัวหนาของหัวข้อ */
+text-align: center;  /* จัดกึ่งกลางข้อความ */
+color: #ffffff;   /* สีข้อความ */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* เงาของข้อความ */
+}
+
+#เกมยอดนิยม1 {
+width: auto; /* ความกว้างเต็ม */
+height: 120px; /* ความสูงอัตโนมัติ */
+background-color: #1d201dd2; /* สีพื้นหลัง */
+border-radius: 15px; /* มุมโค้งของกล่อง */
+position: absolute; /* ตำแหน่งสัมพัทธ์ */
+left: 30px; /* ระยะห่างด้านซ้าย */
+}
+
+#เกมยอดนิยม1 img {
+width: 50px; /* ความกว้างของรูปเกม */
+height: 50px; /* ความสูงของรูปเกม */
+margin: 10px; /* ระยะห่างรอบรูปเกม */
+border-radius: 15px; /* มุมโค้งของรูปเกม */
+object-fit: cover; /* ครอบตัดรูปให้พอดี */
+border: 2px solid #00ff11;  /* ขอบสีเขียว */
+filter: drop-shadow(0 0 8px rgba(0, 204, 255, 0.5)); /* เงาของรูปเกม */
+}
+
+#เกมยอดนิยม2 {
+width: auto; /* ความกว้างเต็ม */
+height: 120px; /* ความสูงอัตโนมัติ */
+background-color: #1d201dc4; /* สีพื้นหลัง */
+border-radius: 15px; /* มุมโค้งของกล่อง */
+position: absolute; /* ตำแหน่งสัมพัทธ์ */
+left: 200px; /* ระยะห่างด้านซ้าย */
+}
+
+#เกมยอดนิยม2 img {
+width: 50px; /* ความกว้างของรูปเกม */
+height: 50px; /* ความสูงของรูปเกม */
+margin: 10px; /* ระยะห่างรอบรูปเกม */
+border-radius: 15px; /* มุมโค้งของรูปเกม */
+object-fit: cover; /* ครอบตัดรูปให้พอดี */
+border: 2px solid #00ff11;  /* ขอบสีเขียว */
+filter: drop-shadow(0 0 8px rgba(0, 204, 255, 0.5)); /* เงาของรูปเกม */
+}
+#เกมยอดนิยม3 {
+width: auto; /* ความกว้างเต็ม */
+height: 120px; /* ความสูงอัตโนมัติ */
+background-color: #1d201dcb; /* สีพื้นหลัง */
+border-radius: 15px; /* มุมโค้งของกล่อง */
+position: absolute; /* ตำแหน่งสัมพัทธ์ */
+left: 30px; /* ระยะห่างด้านซ้าย */
+top: 200px; /* ระยะห่างด้านบน */
+}
+#เกมยอดนิยม3 img {
+width: 50px; /* ความกว้างของรูปเกม */
+height: 50px; /* ความสูงของรูปเกม */
+margin: 10px; /* ระยะห่างรอบรูปเกม */
+border-radius: 15px; /* มุมโค้งของรูปเกม */
+object-fit: cover; /* ครอบตัดรูปให้พอดี */
+border: 2px solid #00ff11;  /* ขอบสีเขียว */
+filter: drop-shadow(0 0 8px rgba(0, 204, 255, 0.5)); /* เงาของรูปเกม */
+}
+#เกมยอดนิยม4 {
+width: auto; /* ความกว้างเต็ม */
+height: 120px; /* ความสูงอัตโนมัติ */
+background-color: #1d201dca; /* สีพื้นหลัง */
+border-radius: 15px; /* มุมโค้งของกล่อง */
+position: absolute; /* ตำแหน่งสัมพัทธ์ */
+left: 200px; /* ระยะห่างด้านซ้าย */
+top: 200px; /* ระยะห่างด้านบน */
+}
+#เกมยอดนิยม4 img {
+width: 50px; /* ความกว้างของรูปเกม */
+height: 50px; /* ความสูงของรูปเกม */    
+margin: 10px; /* ระยะห่างรอบรูปเกม */
+border-radius: 15px; /* มุมโค้งของรูปเกม */
+object-fit: cover; /* ครอบตัดรูปให้พอดี */
+border: 2px solid #00ff11;  /* ขอบสีเขียว */  
+filter: drop-shadow(0 0 8px rgba(0, 204, 255, 0.5)); /* เงาของรูปเกม */
+}
+
+.โบนัสเปอร์เซ็นต์ {
+height: 13px;  /* ความสูงเต็ม */
+max-width: 100px;  /* ความกว้างสูงสุด */
+top: 95px;  /* ระยะห่างด้านบน */
+left: 10px;  /* ระยะห่างด้านซ้าย */
+right: 10px;  /* ระยะห่างด้านขวา */
+position: relative;  /* ตำแหน่งสัมพัทธ์ */
+overflow: hidden;  /* ซ่อนส่วนที่เกิน */
+border: 2px solid #f7f8f7;  /* ขอบสีเขียว */
+border-radius: 15px;   /* มุมโค้งของแถบ */
+background: linear-gradient(90deg, #00ff4c, #00ccff);  /* สีพื้นหลังไล่ระดับ */
+transition: width 0.3s linear;  /* การเปลี่ยนแปลงความกว้าง */
+}
