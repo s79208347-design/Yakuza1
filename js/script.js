@@ -3,7 +3,7 @@ console.log('JavaScript Loaded'); // ตรวจสอบว่าไฟล์�
 const ปุ่มสมัครสมาชิก = document.getElementById('สมัครสมาชิก');
 ปุ่มสมัครสมาชิก.addEventListener('click', function() {
     //เพิ่มลิงก์สมัครสมาชิก
-    window.location.href = 'https://yakuzabet1.com/ref/pusuh0er';
+    window.location.href = 'https://yakuzabet1.com/home';
     // ส่งเหตุการณ์ไปยัง Facebook Pixel
     if (typeof fbq === 'function') {
         fbq('track', 'Subscribe');
